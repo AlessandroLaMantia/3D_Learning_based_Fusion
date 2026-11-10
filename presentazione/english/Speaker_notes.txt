@@ -1,0 +1,68 @@
+WEATHERFUSION — SPEAKER NOTES
+
+SLIDE 1 — Pedestrian detection with 3 types of data fusion
+
+The goal is to find out whether adapting visible–thermal fusion helps detect more pedestrians when rain degrades the visible image. We use real images and simulated rain. We compare fixed averaging, AMG-Fuse-guided fusion before adaptation and the same fusion after adaptation. The detector remains identical. This version replaces the earlier small experiment with pseudo references.
+
+SLIDE 2 — Objective: compare three fusion methods
+
+We compare three ways of combining the same visible and thermal images with simulated rain: fixed averaging, a pretrained network and the same network after fine-tuning. All methods are evaluated on the same 50 test images with the same frozen detector. We measure detected pedestrians and false positives: improvement must be verified rather than assumed.
+
+SLIDE 3 — Dataset: AWMM-100K and two image types
+
+We use LLVIP, a dataset of visible and thermal image pairs of the same scene, mainly in low light. The images shown are the original pair from the same scene: a standard colour camera on the left and an infrared thermal camera on the right. They are already aligned and have annotated pedestrian boxes. Of the full dataset of 15,488 pairs, we use 170: 100 to update the weights, 20 for validation and 50 for testing. We add artificial rain only to the visible image; the thermal image remains unchanged. LLVIP is not a real rain dataset.
+
+SLIDE 4 — Artificial rain in our experiment
+
+We show the same colour image as on the previous slide after applying the artificial rain used in the experiment. It is not a photograph taken in real rain. The thermal image of the same scene remains unchanged. The goal is to compare the three types of data fusion — fixed averaging, a pretrained network and the network after fine-tuning — using the same pair of inputs: the colour image with simulated rain and the infrared camera image. The detector remains identical in all three comparisons.
+
+SLIDE 5 — The complete pipeline:
+
+The visible image with rain and the thermal image enter the fusion process. The fusion process block represents one of the three methods being compared: fixed averaging, pretrained fusion or fusion after fine-tuning. Each method produces one fused image, which the same YOLO detector analyses to detect pedestrians.
+
+SLIDE 6 — 1) No learning-based data fusion
+
+This method combines already aligned images without learning from data. At each position, it takes the normalised visible and thermal values and averages them: F = 0.5 V + 0.5 T. The single thermal channel is replicated to combine it with the three colour channels. The example of 100 and 200 averaging to 150 uses illustrative values on a common scale, not temperatures in degrees. The weights remain 50% and 50% in every region and scene, even when an input is degraded. There are no fusion weights to train. The fused image is then fed to the same YOLO detector used by the other two methods. “Non-learning-based” refers to fusion, not the detector.
+
+SLIDE 7 — 2) Learning-based data fusion
+
+We use AMG-Fuse’s MSAKNet, loading the authors’ Haze checkpoint, already trained for visible–infrared fusion in haze. We do not start from random weights and perform no fine-tuning of our own in this second method. The network contains convolutions for local structures and Transformer blocks with attention to relate features. The visible, thermal and fusion branches exchange information at multiple scales. Features are learned numerical maps, not pedestrian labels. To run on the CPU, we reduce both inputs to 40 × 32 pixels, extract features before the final output_f convolution and apply this original layer to obtain a small RGB reconstruction. The next slide explains how this reconstruction guides fusion of the 320 × 256 inputs. This is an AMG-Fuse-guided variant, distinct from its native full-resolution output.
+
+SLIDE 8 — How the network guides fusion
+
+The network does not directly produce the alpha map used in our final blend. First, output_f reconstructs a result R at 40 × 32 pixels. At each position, we compute the mean squared distance across the three channels between R and the reduced visible input, dV, and between R and the reduced thermal input, dT. The thermal input is expanded to three channels. We define alpha = sigmoid(4 × (dT − dV)). If R is closer to the visible input, dV is smaller than dT and alpha exceeds 0.5; if it is closer to the thermal input, alpha is below 0.5. The sigmoid keeps coefficients between zero and one. We enlarge the map to 320 × 256 with bilinear interpolation and compute F = alpha V + (1 − alpha) T, using the higher-resolution inputs to retain detail. Fixed averaging corresponds to alpha always equal to 0.5; here alpha depends on the inputs and varies by position. For example, alpha = 0.8 means 80% visible and 20% thermal: this illustrates its interpretation and is not a measured value. Alpha is not a reliability probability. Any detection benefit must be measured with YOLO. This procedure is our AMG-Fuse-guided variant, not its native full-resolution output.
+
+SLIDE 9 — Fine-tuned learning-based data fusion
+
+Fine-tuning starts from pretrained weights, not a random network. We use 100 LLVIP pairs with simulated rain on the visible input and ground truth pedestrian annotations for 3 epochs. Fusion produces an image and YOLO proposes pedestrians. The loss compares classification and location with ground truth boxes; backpropagation passes through the detector and updates only the 2,592 weights of AMG-Fuse’s final layer. The rest of the fusion network and the entire detector remain frozen. A small regularisation term limits deviation of the map from its initial version. The 20 validation pairs recommend a checkpoint; we nevertheless compare the weights actually updated after three epochs on the 50 test pairs. The common detector is prepared before the comparison and remains identical across the three methods. Validation recommends the original weights: fine-tuning is not presented as a guaranteed improvement.
+
+SLIDE 10 — YOLO: from fused images to pedestrians
+
+Images produced by fixed averaging, pretrained fusion and fusion after fine-tuning are analysed separately by the same YOLO detector with identical parameters. YOLO searches for pedestrians and proposes rectangles with confidence scores. The threshold is the minimum score required to retain a detection: at 0.30, a proposal scoring 0.75 is shown and one scoring 0.20 is hidden. Raising the threshold shows fewer proposals: it may remove false alarms but also lose correct pedestrians. Lowering it shows more proposals: it may recover pedestrians but also add false alarms. The score is not a calibrated probability. In the demo, the slider changes only the displayed boxes; aggregate results are computed at the shared threshold of 0.30 chosen on validation.
+
+SLIDE 11 — Interface
+
+We now compare the three methods on the same 50 test pairs, separate from training, using the same YOLO. The local interface is available at http://127.0.0.1:64001 after running AVVIA_DEMO.cmd. We first show one scene with both inputs, the three fused images and detections, then the aggregate results.
+
+SLIDE 12 — Performance of the three fusion methods
+
+The chart compares the three fusion methods on the same held-out test set using the same frozen detector. Recall measures how many annotated pedestrians are detected; precision measures how many predictions are correct. AP50 summarises the precision–recall curve at IoU 0.50 over proposals scoring at least 0.05. Counts, recall and precision use the shared validation-selected score threshold of 0.30. The counts show detected pedestrians, missed pedestrians and false positives. Fine-tuning yields +11 detected pedestrians and +6 false positives compared with pretrained fusion. The experiment evaluates epoch 3; validation recommends epoch 0. The rain is simulated.
+
+SLIDE 13 — Two data fusion problems and their solutions
+
+1. Giving equal weight to images of different quality. I used spatially varying weights guided by the network.
+
+2. Risking the loss of pedestrian details. I applied the enlarged weight map to the original images.
+
+SLIDE 14 — Three things I learned from this project
+
+1. Combining two sensors. Visible and thermal images provide different information: combining them can help detect pedestrians.
+
+2. Adapting a pretrained network. Existing weights can be reused while updating only a small part of the network.
+
+3. Evaluating an improvement. Detecting more pedestrians is not enough: false positives must also be checked.
+
+SLIDE 15 — Thank you for your attention
+
+
+

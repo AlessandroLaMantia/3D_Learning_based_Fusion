@@ -1,0 +1,1814 @@
+[
+  {
+    "title": "Riconoscimento pedoni con 3 tipi di data fusion",
+    "subtitle": "",
+    "note": "L’obiettivo è capire se adattare la fusione tra visibile e termico aiuta a trovare più pedoni quando il visibile è degradato dalla pioggia. Usiamo immagini reali e pioggia simulata. Il confronto considera media fissa, fusione guidata da AMG-Fuse prima dell’adattamento e la stessa fusione dopo. Il detector resta identico. Questa versione sostituisce il piccolo esperimento precedente con pseudo-riferimenti.",
+    "layout": "cover",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 1.1,
+        "y": 1.6,
+        "w": 11.133,
+        "h": 0.45,
+        "text": "LEARNING-BASED DATA FUSION",
+        "size": 15,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1.1,
+        "y": 2.65,
+        "w": 11.133,
+        "h": 1.65,
+        "text": "Riconoscimento pedoni\ncon 3 tipi di data fusion",
+        "size": 38,
+        "color": "#183249",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1.1,
+        "y": 4.9,
+        "w": 11.133,
+        "h": 0.65,
+        "text": "Alessandro La Mantia",
+        "size": 25,
+        "color": "#087d94",
+        "bold": false,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Obiettivo: confrontare tre fusioni",
+    "subtitle": "",
+    "note": "Confrontiamo tre modi di combinare le stesse immagini visibili e termiche con pioggia simulata: media fissa, rete preaddestrata e stessa rete dopo fine-tuning. Valutiamo tutti i metodi sulle stesse 50 immagini di test, con lo stesso detector congelato. Il confronto misura pedoni trovati e falsi positivi: il miglioramento va verificato, non dato per scontato.",
+    "layout": "objective-comparison",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Obiettivo: confrontare tre fusioni",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 02",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 0.8,
+        "y": 2.7,
+        "w": 3.8,
+        "h": 2.5,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 1.0,
+        "y": 3.533333333333333,
+        "w": 3.4,
+        "h": 1.35,
+        "text": "no\nlearning-based\ndata fusion",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 4.8,
+        "y": 2.7,
+        "w": 3.8,
+        "h": 2.5,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 5.0,
+        "y": 3.533333333333333,
+        "w": 3.4,
+        "h": 1.35,
+        "text": "learning-based\ndata fusion",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 8.8,
+        "y": 2.7,
+        "w": 3.8,
+        "h": 2.5,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 9.0,
+        "y": 3.325,
+        "w": 3.4,
+        "h": 1.35,
+        "text": "fine tuned\nlearning-based\ndata fusion",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 2.3997656249999997,
+        "y": 5.6,
+        "w": 5.3628125,
+        "h": 0.45,
+        "text": "Capire se la rete e il fine-tuning aiutano a",
+        "size": 18,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 7.682578125,
+        "y": 5.6,
+        "w": 3.2976562499999997,
+        "h": 0.45,
+        "text": "riconoscere più pedoni",
+        "size": 18,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 6.05,
+        "w": 11.3,
+        "h": 0.6,
+        "text": "rispetto alla no learning-based data fusion",
+        "size": 18,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Dataset: AWMM-100K e due tipi di immagini",
+    "subtitle": "",
+    "note": "Usiamo LLVIP, un dataset di coppie visibili e termiche della stessa scena, soprattutto in scarsa illuminazione. Le immagini mostrate sono la coppia originale della stessa scena: a sinistra la normale telecamera a colori, a destra la termocamera a infrarossi. Sono già allineate e accompagnate da riquadri annotati dei pedoni. Dal dataset completo di 15.488 coppie ne usiamo 170: 100 per aggiornare i pesi, 20 per la validation e 50 per il test. Nell’esperimento aggiungiamo pioggia artificiale soltanto al visibile; il termico resta invariato. LLVIP non è un dataset di pioggia reale.",
+    "layout": "dataset-inputs",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Dataset: AWMM-100K e due tipi di immagini",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 24,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 03",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "image",
+        "x": 0.9,
+        "y": 2.5,
+        "w": 5.45,
+        "h": 3.1,
+        "path": "C:\\Users\\LENOVO\\Desktop\\Università Parma\\Esami\\2° Anno\\1° Semestre\\3D Perception, Learning-Based Data Fusion\\Progetti\\Progetto 3\\presentazione\\figure\\visible_original.png"
+      },
+      {
+        "kind": "image",
+        "x": 6.95,
+        "y": 2.5,
+        "w": 5.45,
+        "h": 3.1,
+        "path": "C:\\Users\\LENOVO\\Desktop\\Università Parma\\Esami\\2° Anno\\1° Semestre\\3D Perception, Learning-Based Data Fusion\\Progetti\\Progetto 3\\presentazione\\figure\\thermal.png"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 5.75,
+        "w": 5.3,
+        "h": 0.5,
+        "text": "Visibile: telecamera a colori",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 7,
+        "y": 5.75,
+        "w": 5.3,
+        "h": 0.5,
+        "text": "Termico: telecamera a infrarossi",
+        "size": 20,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 6.45,
+        "w": 11.3,
+        "h": 0.4,
+        "text": "AWMM-100K: pretraining. Immagini mostrate: LLVIP, usato nel nostro fine-tuning.",
+        "size": 16,
+        "color": "#51677b",
+        "bold": false,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Pioggia artificiale nel nostro esperimento",
+    "subtitle": "Nel nostro esperimento aggiungiamo pioggia artificiale solo alle immagini della telecamera a colori.",
+    "note": "Mostriamo la stessa immagine a colori della slide precedente dopo l’applicazione della pioggia artificiale usata nell’esperimento. Non è una fotografia scattata sotto pioggia reale. Il termico della stessa scena rimane invariato. L’obiettivo è confrontare i tre tipi di data fusion — media fissa, rete preaddestrata e rete dopo fine-tuning — usando sempre questa coppia di ingressi: immagine a colori con pioggia simulata e immagine della telecamera a infrarossi. Il detector resta identico nei tre confronti.",
+    "layout": "rain-input",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Pioggia artificiale nel nostro esperimento",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "Nel nostro esperimento aggiungiamo pioggia artificiale solo alle immagini della telecamera a colori.",
+        "size": 14,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 04",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "image",
+        "x": 4.16,
+        "y": 2.65,
+        "w": 5,
+        "h": 3.1,
+        "path": "C:\\Users\\LENOVO\\Desktop\\Università Parma\\Esami\\2° Anno\\1° Semestre\\3D Perception, Learning-Based Data Fusion\\Progetti\\Progetto 3\\presentazione\\figure\\visible.png"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 5.95,
+        "w": 11.3,
+        "h": 0.4,
+        "text": "Obiettivo: confrontare i 3 tipi di data fusion tra",
+        "size": 20,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 6.4,
+        "w": 11.3,
+        "h": 0.4,
+        "text": "immagine con la pioggia e immagine della telecamera a infrarossi",
+        "size": 20,
+        "color": "#183249",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Il percorso completo è questo:",
+    "subtitle": "",
+    "note": "Le immagini visibile con pioggia e termica entrano nel processo di fusione. Il blocco fusion process (1/2/3 method) rappresenta uno dei tre metodi confrontati: media fissa, fusione preaddestrata o fusione dopo fine-tuning. Ogni metodo produce una sola immagine fusa, che viene analizzata dallo stesso YOLO per rilevare i pedoni.",
+    "layout": "complete-pipeline",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Il percorso completo è questo:",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 05",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 0.75,
+        "y": 3.15,
+        "w": 2.65,
+        "h": 1.2,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 0.83,
+        "y": 3.4299999999999997,
+        "w": 2.4899999999999998,
+        "h": 0.8,
+        "text": "Immagine visibile\ncon pioggia",
+        "size": 17,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 0.75,
+        "y": 4.75,
+        "w": 2.65,
+        "h": 1.2,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 0.83,
+        "y": 5.03,
+        "w": 2.4899999999999998,
+        "h": 0.8,
+        "text": "Immagine termica",
+        "size": 17,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 4.05,
+        "y": 3.95,
+        "w": 2.65,
+        "h": 1.2,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 4.13,
+        "y": 4.23,
+        "w": 2.4899999999999998,
+        "h": 0.8,
+        "text": "fusion process\n(1/2/3 method)",
+        "size": 17,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 7.15,
+        "y": 3.95,
+        "w": 1.65,
+        "h": 1.2,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 7.23,
+        "y": 4.23,
+        "w": 1.49,
+        "h": 0.8,
+        "text": "Immagine\nfusa",
+        "size": 17,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 9.25,
+        "y": 3.95,
+        "w": 1.1,
+        "h": 1.2,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 9.33,
+        "y": 4.38,
+        "w": 0.9400000000000001,
+        "h": 0.8,
+        "text": "YOLO",
+        "size": 17,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 10.8,
+        "y": 3.95,
+        "w": 1.8,
+        "h": 1.2,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 10.88,
+        "y": 4.23,
+        "w": 1.6400000000000001,
+        "h": 0.8,
+        "text": "Pedoni\nrilevati",
+        "size": 17,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 3.4,
+        "y": 3.74,
+        "w": 0.3,
+        "h": 0.025,
+        "color": "#087d94"
+      },
+      {
+        "kind": "rect",
+        "x": 3.4,
+        "y": 5.34,
+        "w": 0.3,
+        "h": 0.025,
+        "color": "#087d94"
+      },
+      {
+        "kind": "rect",
+        "x": 3.68,
+        "y": 3.74,
+        "w": 0.025,
+        "h": 1.625,
+        "color": "#087d94"
+      },
+      {
+        "kind": "rect",
+        "x": 3.68,
+        "y": 4.54,
+        "w": 0.1,
+        "h": 0.025,
+        "color": "#087d94"
+      },
+      {
+        "kind": "text",
+        "x": 3.73,
+        "y": 4.29,
+        "w": 0.4,
+        "h": 0.55,
+        "text": "→",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 6.72,
+        "y": 4.29,
+        "w": 0.4,
+        "h": 0.55,
+        "text": "→",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 8.82,
+        "y": 4.29,
+        "w": 0.4,
+        "h": 0.55,
+        "text": "→",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 10.37,
+        "y": 4.29,
+        "w": 0.4,
+        "h": 0.55,
+        "text": "→",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "1) No learning-based data fusion",
+    "subtitle": "",
+    "note": "Questo metodo combina immagini già allineate senza imparare dai dati. Per ogni posizione prende il valore del visibile e quello del termico, entrambi normalizzati, e calcola la loro media: F = 0,5 V + 0,5 T. Il termico ha un solo canale, replicato per combinarlo con i tre canali a colori. L’esempio 100 e 200 che danno 150 usa valori illustrativi su una scala comune: non sono temperature in gradi. I pesi restano 50% e 50% in ogni zona e per ogni scena, anche quando un ingresso è degradato. Non ci sono pesi da addestrare nella fusione. L’immagine fusa va poi allo stesso detector YOLO usato dagli altri due metodi. “No learning-based” riguarda la fusione, non il detector.",
+    "layout": "fixed-average",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "1) No learning-based data fusion",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 06",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 2.05,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "Regola: media dei pixel corrispondenti delle due immagini",
+        "size": 23,
+        "color": "#183249",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 1,
+        "y": 2.95,
+        "w": 11.3,
+        "h": 1.8,
+        "color": "#dcebf0"
+      },
+      {
+        "kind": "text",
+        "x": 1.45,
+        "y": 3.55,
+        "w": 4.1,
+        "h": 0.65,
+        "text": "Immagine fusa =",
+        "size": 28,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 5.75,
+        "y": 3.2,
+        "w": 5.8,
+        "h": 0.6,
+        "text": "Visibile + Termico",
+        "size": 28,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 5.95,
+        "y": 3.86,
+        "w": 5.4,
+        "h": 0.025,
+        "color": "#087d94"
+      },
+      {
+        "kind": "text",
+        "x": 5.75,
+        "y": 4.05,
+        "w": 5.8,
+        "h": 0.6,
+        "text": "2",
+        "size": 28,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 5.15,
+        "w": 11.3,
+        "h": 1.6,
+        "text": "Ogni pixel riceve metà contributo da\nciascuna immagine.\nI pesi sono uguali ovunque: la fusione\nnon impara.",
+        "size": 19,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "2) Learning-based data fusion",
+    "subtitle": "",
+    "note": "Usiamo MSAKNet di AMG-Fuse, caricando il checkpoint Haze degli autori, già addestrato per la fusione visibile–infrarosso in presenza di foschia. Non partiamo da pesi casuali e in questo secondo metodo non eseguiamo nostro fine-tuning. La rete contiene convoluzioni, che elaborano strutture locali, e blocchi Transformer con attenzione, che mettono in relazione le caratteristiche. I rami del visibile, del termico e della fusione scambiano informazioni a più scale. Le feature sono mappe numeriche apprese, non etichette di pedoni. Nel progetto, per lavorare sulla CPU, i due ingressi vengono ridotti a 40 × 32 pixel: estraiamo le feature prima della convoluzione finale output_f e applichiamo questo strato originale per ottenere una ricostruzione RGB ridotta. La slide seguente spiega come questa ricostruzione guida la fusione degli ingressi a 320 × 256. È una variante guidata da AMG-Fuse, distinta dalla sua uscita nativa a piena risoluzione.",
+    "layout": "neural-fusion",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "2) Learning-based data fusion",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 07",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 1.95,
+        "w": 3.9293424479166665,
+        "h": 0.55,
+        "text": "• Rete preaddestrata usata:",
+        "size": 19,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 4.839342447916667,
+        "y": 1.95,
+        "w": 2,
+        "h": 0.55,
+        "text": "AMG-Fuse",
+        "size": 19,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 2.4,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "• Dataset utilizzato: AWMM-100K con 1.000 coppie di immagini",
+        "size": 19,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 2.85,
+        "w": 10.290203993055556,
+        "h": 0.55,
+        "text": "• AMG-Fuse elabora visibile e termico e produce direttamente un’immagine",
+        "size": 19,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 11.270203993055556,
+        "y": 2.85,
+        "w": 0.35,
+        "h": 0.55,
+        "text": "R",
+        "size": 19,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 0.8,
+        "y": 3.85,
+        "w": 3.7,
+        "h": 0.9,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 0.92,
+        "y": 4.1,
+        "w": 3.46,
+        "h": 0.5,
+        "text": "1. Estrae feature",
+        "size": 18,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 0.92,
+        "y": 5.05,
+        "w": 3.46,
+        "h": 1.15,
+        "text": "Individua contorni e\ncontrasti nei due ingressi.",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 4.8,
+        "y": 3.85,
+        "w": 3.7,
+        "h": 0.9,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 4.92,
+        "y": 4.1,
+        "w": 3.46,
+        "h": 0.5,
+        "text": "2. Le combina",
+        "size": 18,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 4.92,
+        "y": 5.05,
+        "w": 3.46,
+        "h": 1.15,
+        "text": "Unisce le informazioni\ntramite l’attenzione.",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 8.8,
+        "y": 3.85,
+        "w": 3.7,
+        "h": 0.9,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 8.92,
+        "y": 4.1,
+        "w": 3.46,
+        "h": 0.5,
+        "text": "3. Ricostruisce",
+        "size": 18,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 8.92,
+        "y": 5.05,
+        "w": 3.46,
+        "h": 0.45,
+        "text": "Produce una prima",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 9.221471354166667,
+        "y": 5.4,
+        "w": 2.607057291666667,
+        "h": 0.45,
+        "text": "immagine combinata",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 11.808528645833334,
+        "y": 5.4,
+        "w": 0.3,
+        "h": 0.45,
+        "text": "R",
+        "size": 17,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 4.5,
+        "y": 4.06,
+        "w": 0.3,
+        "h": 0.55,
+        "text": "→",
+        "size": 21,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 8.5,
+        "y": 4.06,
+        "w": 0.3,
+        "h": 0.55,
+        "text": "→",
+        "size": 21,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Come la rete guida la fusione",
+    "subtitle": "Il codice prende R e calcola α dopo, confrontandola con i due ingressi.",
+    "note": "La rete non produce direttamente la mappa alfa usata nella nostra combinazione finale. Prima ricostruiamo un risultato R a 40 × 32 tramite output_f. Per ogni posizione calcoliamo la distanza quadratica media sui tre canali fra R e il visibile ridotto, dV, e fra R e il termico ridotto, dT. Il termico viene esteso ai tre canali. Definiamo alfa = sigmoid(4 × (dT − dV)). Se R è più vicino al visibile, dV è minore di dT e alfa supera 0,5; se è più vicino al termico, alfa è inferiore a 0,5. La sigmoid mantiene i coefficienti fra zero e uno. Ingrandiamo la mappa con interpolazione bilineare a 320 × 256 e calcoliamo F = alfa V + (1 − alfa) T, usando gli ingressi alla risoluzione maggiore per conservarne i dettagli. La media fissa corrisponde ad alfa sempre uguale a 0,5; qui alfa dipende dagli ingressi e varia tra le posizioni. Per esempio alfa = 0,8 significa 80% visibile e 20% termico: è un esempio di interpretazione, non un valore misurato. Alfa non è una probabilità di affidabilità e un beneficio per il riconoscimento va misurato con YOLO. Questa procedura è la nostra variante guidata da AMG-Fuse, non la sua uscita nativa a piena risoluzione.",
+    "layout": "neural-fusion-weights",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Come la rete guida la fusione",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "Il codice prende R e calcola α dopo, confrontandola con i due ingressi.",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 08",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 2.55,
+        "w": 11.3,
+        "h": 0.7,
+        "text": "• R più simile al visibile → α > 0,5 → più contributo del visibile.",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 3.1,
+        "w": 11.3,
+        "h": 0.7,
+        "text": "• R più simile al termico → α < 0,5 → più contributo del termico.",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 1,
+        "y": 4.15,
+        "w": 11.3,
+        "h": 0.75,
+        "color": "#dcebf0"
+      },
+      {
+        "kind": "text",
+        "x": 1.2,
+        "y": 4.33,
+        "w": 10.9,
+        "h": 0.5,
+        "text": "Immagine fusa = α × Visibile + (1 − α) × Termico",
+        "size": 25,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 5.15,
+        "w": 11.3,
+        "h": 0.35,
+        "text": "Media fissa: α = 0,5 ovunque. Qui: il peso cambia in base alla scena e alla posizione.",
+        "size": 16,
+        "color": "#183249",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Fine-tuned learning-based data fusion",
+    "subtitle": "",
+    "note": "Il fine-tuning parte dai pesi preaddestrati, non da una rete casuale. Usiamo 100 coppie LLVIP con pioggia simulata sul visibile e le vere annotazioni dei pedoni per 3 epoche. La fusione produce un’immagine e il detector YOLO propone i pedoni. La loss confronta classificazione e posizione con i riquadri veri; la backpropagation attraversa il detector e aggiorna soltanto i 2592 pesi dell’ultimo strato di AMG-Fuse. Il resto della fusione e tutto il detector restano congelati. Una piccola regolarizzazione limita lo scostamento della mappa da quella iniziale. Le 20 coppie validation raccomandano un checkpoint; confrontiamo comunque i pesi realmente aggiornati dopo tre epoche sulle 50 coppie test. Il detector comune è preparato prima del confronto e resta identico nei tre metodi. La validation raccomanda l’originale: il fine-tuning non è presentato come un miglioramento garantito.",
+    "layout": "fine-tuning-method",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Fine-tuned learning-based data fusion",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 09",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1.0,
+        "y": 1.95,
+        "w": 8.474001736111111,
+        "h": 0.55,
+        "text": "• Partiamo dalla stessa AMG-Fuse e adattiamo soltanto l’",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 9.32400173611111,
+        "y": 1.95,
+        "w": 2.2960503472222222,
+        "h": 0.55,
+        "text": "ultimo strato",
+        "size": 21,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1.0,
+        "y": 2.5,
+        "w": 0.41475694444444444,
+        "h": 0.55,
+        "text": "•",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1.2647569444444444,
+        "y": 2.5,
+        "w": 2.4169270833333334,
+        "h": 0.55,
+        "text": "Dataset LLVIP",
+        "size": 21,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 3.5316840277777777,
+        "y": 2.5,
+        "w": 3.770876736111111,
+        "h": 0.55,
+        "text": ": 100 coppie di immagini",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1.0,
+        "y": 3.05,
+        "w": 1.9516493055555555,
+        "h": 0.55,
+        "text": "• 3 epoche:",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 2.8016493055555554,
+        "y": 3.05,
+        "w": 1.0725260416666667,
+        "h": 0.55,
+        "text": "2.592",
+        "size": 21,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 3.8168402777777772,
+        "y": 3.05,
+        "w": 2.4149739583333334,
+        "h": 0.55,
+        "text": "pesi aggiornati",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 0.8,
+        "y": 4.15,
+        "w": 3.7,
+        "h": 0.9,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 0.92,
+        "y": 4.4,
+        "w": 3.46,
+        "h": 0.5,
+        "text": "1. Riconoscimento",
+        "size": 18,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 0.92,
+        "y": 5.35,
+        "w": 3.46,
+        "h": 1.05,
+        "text": "Immagine fusa → YOLO →\nriquadri dei pedoni.",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 4.8,
+        "y": 4.15,
+        "w": 3.7,
+        "h": 0.9,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 4.92,
+        "y": 4.4,
+        "w": 3.46,
+        "h": 0.5,
+        "text": "2. Errore",
+        "size": 18,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 4.92,
+        "y": 5.35,
+        "w": 3.46,
+        "h": 1.05,
+        "text": "Confronto con i riquadri veri\npresenti nel dataset.",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 8.8,
+        "y": 4.15,
+        "w": 3.7,
+        "h": 0.9,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 8.92,
+        "y": 4.4,
+        "w": 3.46,
+        "h": 0.5,
+        "text": "3. Aggiornamento",
+        "size": 18,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 8.92,
+        "y": 5.35,
+        "w": 3.46,
+        "h": 1.05,
+        "text": "L’errore modifica solo\nl’ultimo strato della fusione.",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 4.5,
+        "y": 4.36,
+        "w": 0.3,
+        "h": 0.55,
+        "text": "→",
+        "size": 21,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 8.5,
+        "y": 4.36,
+        "w": 0.3,
+        "h": 0.55,
+        "text": "→",
+        "size": 21,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "YOLO: dalle immagini fuse ai pedoni",
+    "subtitle": "Ogni immagine fusa dei tre metodi entra separatamente nello stesso YOLO.",
+    "note": "Le immagini prodotte da media fissa, fusione preaddestrata e fusione dopo fine-tuning vengono analizzate separatamente dallo stesso detector YOLO, mantenendo identici i suoi parametri. YOLO cerca i pedoni e propone rettangoli con un punteggio di confidenza. La soglia è il punteggio minimo per mantenere una rilevazione: a soglia 0,30 una proposta con punteggio 0,75 viene mostrata, una con 0,20 viene nascosta. Alzando la soglia si mostrano meno proposte: si possono eliminare falsi allarmi, ma anche perdere pedoni corretti. Abbassandola si mostrano più proposte: si possono recuperare pedoni, ma anche aggiungere falsi allarmi. Il punteggio non è una probabilità calibrata. Nella demo lo slider modifica solo le box visualizzate, mentre i risultati aggregati sono calcolati alla soglia condivisa 0,30 scelta sulla validation.",
+    "layout": "yolo-threshold",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "YOLO: dalle immagini fuse ai pedoni",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "Ogni immagine fusa dei tre metodi entra separatamente nello stesso YOLO.",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 10",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 1,
+        "y": 2.65,
+        "w": 11.3,
+        "h": 0.85,
+        "color": "#dcebf0"
+      },
+      {
+        "kind": "text",
+        "x": 1.2,
+        "y": 2.87,
+        "w": 10.9,
+        "h": 0.5,
+        "text": "Immagine fusa → YOLO → riquadri dei pedoni + punteggi",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 3.75,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "Soglia = punteggio minimo per mostrare una rilevazione.",
+        "size": 23,
+        "color": "#183249",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 1,
+        "y": 4.65,
+        "w": 5.35,
+        "h": 1.8,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 1.2,
+        "y": 4.85,
+        "w": 4.95,
+        "h": 0.5,
+        "text": "Soglia più alta ↑",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1.2,
+        "y": 5.4,
+        "w": 4.95,
+        "h": 0.95,
+        "text": "Meno rettangoli mostrati.\nPuò ridurre i falsi allarmi,\nma anche perdere pedoni veri.",
+        "size": 18,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 6.95,
+        "y": 4.65,
+        "w": 5.35,
+        "h": 1.8,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 7.15,
+        "y": 4.85,
+        "w": 4.95,
+        "h": 0.5,
+        "text": "Soglia più bassa ↓",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 7.15,
+        "y": 5.4,
+        "w": 4.95,
+        "h": 0.95,
+        "text": "Più rettangoli mostrati.\nPuò recuperare pedoni,\nma anche aggiungere falsi allarmi.",
+        "size": 18,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Interfaccia",
+    "subtitle": "",
+    "note": "Ora confrontiamo i tre metodi sulle stesse 50 coppie di test, separate dal training, usando lo stesso YOLO. L’interfaccia locale è disponibile su http://127.0.0.1:64001 dopo aver avviato AVVIA_DEMO.cmd. Mostriamo prima una scena con i due ingressi, le tre fusioni e le rilevazioni, poi i risultati aggregati.",
+    "layout": "demo-transition",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Interfaccia",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 11",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1.229,
+        "y": 2.6,
+        "w": 7.276302083333333,
+        "h": 0.6,
+        "text": "Ora confrontiamo i tre metodi sulle stesse",
+        "size": 24,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 8.355302083333333,
+        "y": 2.6,
+        "w": 0.6139756944444444,
+        "h": 0.6,
+        "text": "50",
+        "size": 24,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 8.925180555555556,
+        "y": 2.6,
+        "w": 3.4347222222222222,
+        "h": 0.6,
+        "text": "coppie di immagini",
+        "size": 24,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 2.7998550347222224,
+        "y": 3.15,
+        "w": 5.326866319444445,
+        "h": 0.6,
+        "text": "test (dataset: LLVIP) usando lo",
+        "size": 24,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 7.976721354166667,
+        "y": 3.15,
+        "w": 2.706423611111111,
+        "h": 0.6,
+        "text": "STESSO YOLO",
+        "size": 24,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 1.5,
+        "y": 4.35,
+        "w": 10.3,
+        "h": 1.05,
+        "color": "#dcebf0"
+      },
+      {
+        "kind": "text",
+        "x": 1.7,
+        "y": 4.65,
+        "w": 9.9,
+        "h": 0.6,
+        "text": "http://127.0.0.1:64001",
+        "size": 28,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Prestazioni dei tre metodi di fusione",
+    "subtitle": "50 coppie LLVIP di test · 128 pedoni annotati · stesso YOLO congelato",
+    "note": "Il grafico confronta le tre fusioni sullo stesso test separato dal training, usando lo stesso detector congelato. Il recall misura quanti pedoni annotati vengono trovati; la precision misura quante previsioni sono corrette. AP50 riassume la curva precision–recall con IoU 0,50 sulle proposte con score almeno 0,05. Conteggi, recall e precision usano la soglia condivisa 0.30, scelta sulla validation. I conteggi mostrano pedoni trovati, mancati e falsi positivi. Il fine-tuning produce +11 pedoni trovati e +6 falsi positivi rispetto alla fusione preaddestrata. Si valuta l’epoca 3; la validation raccomanda l’epoca 0. La pioggia è simulata.",
+    "layout": "performance-comparison",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Prestazioni dei tre metodi di fusione",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "50 coppie LLVIP di test · 128 pedoni annotati · stesso YOLO congelato",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 12",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "image",
+        "x": 0.65,
+        "y": 2.45,
+        "w": 12.03,
+        "h": 4.25,
+        "path": "C:\\Users\\LENOVO\\Desktop\\Università Parma\\Esami\\2° Anno\\1° Semestre\\3D Perception, Learning-Based Data Fusion\\Progetti\\Progetto 3\\presentazione\\figure\\performance_it.png"
+      }
+    ]
+  },
+  {
+    "title": "Due problemi nella data fusion e le soluzioni",
+    "subtitle": "",
+    "note": "1. Dare lo stesso peso a due immagini di qualità diversa. Ho usato pesi variabili per zona, guidati dalla rete.\n\n2. Rischiare di perdere dettagli dei pedoni. Ho applicato la mappa dei pesi ingrandita alle immagini originali.",
+    "layout": "challenges",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Due problemi nella data fusion e le soluzioni",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 2.65,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "1. Dare lo stesso peso a due immagini di qualità diversa",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 3.28,
+        "w": 11.3,
+        "h": 0.85,
+        "text": "Ho usato pesi variabili per zona, guidati dalla rete.",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 4.45,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "2. Rischiare di perdere dettagli dei pedoni",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 5.08,
+        "w": 11.3,
+        "h": 0.85,
+        "text": "Ho applicato la mappa dei pesi ingrandita alle immagini originali.",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 13",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      }
+    ]
+  },
+  {
+    "title": "Tre cose imparate in questo progetto",
+    "subtitle": "",
+    "note": "1. Combinare due sensori. Visibile e termico danno informazioni diverse: unirle può aiutare a trovare i pedoni.\n\n2. Adattare una rete già addestrata. Si può partire da pesi esistenti e aggiornare solo una piccola parte della rete.\n\n3. Valutare davvero un miglioramento. Trovare più pedoni non basta: bisogna controllare anche i falsi positivi.",
+    "layout": "lessons-learned",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Tre cose imparate in questo progetto",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 2.35,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "1. Combinare due sensori",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 3.75,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "2. Adattare una rete già addestrata",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 5.15,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "3. Valutare davvero un miglioramento",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 14",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      }
+    ]
+  },
+  {
+    "title": "Grazie per l'attenzione",
+    "subtitle": "",
+    "note": "",
+    "layout": "thanks",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 3.25,
+        "w": 11.8,
+        "h": 1,
+        "text": "Grazie per l'attenzione",
+        "size": 38,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  }
+]

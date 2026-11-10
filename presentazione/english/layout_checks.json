@@ -1,0 +1,107 @@
+[
+  {
+    "slide": 1,
+    "title": "Pedestrian detection with 3 types of data fusion",
+    "layout": "cover",
+    "checked_text_blocks": 3,
+    "overflow": false
+  },
+  {
+    "slide": 2,
+    "title": "Objective: compare three fusion methods",
+    "layout": "objective-comparison",
+    "checked_text_blocks": 9,
+    "overflow": false
+  },
+  {
+    "slide": 3,
+    "title": "Dataset: AWMM-100K and two image types",
+    "layout": "dataset-inputs",
+    "checked_text_blocks": 6,
+    "overflow": false
+  },
+  {
+    "slide": 4,
+    "title": "Artificial rain in our experiment",
+    "layout": "rain-input",
+    "checked_text_blocks": 5,
+    "overflow": false
+  },
+  {
+    "slide": 5,
+    "title": "The complete pipeline:",
+    "layout": "complete-pipeline",
+    "checked_text_blocks": 13,
+    "overflow": false
+  },
+  {
+    "slide": 6,
+    "title": "1) No learning-based data fusion",
+    "layout": "fixed-average",
+    "checked_text_blocks": 8,
+    "overflow": false
+  },
+  {
+    "slide": 7,
+    "title": "2) Learning-based data fusion",
+    "layout": "neural-fusion",
+    "checked_text_blocks": 18,
+    "overflow": false
+  },
+  {
+    "slide": 8,
+    "title": "How the network guides fusion",
+    "layout": "neural-fusion-weights",
+    "checked_text_blocks": 7,
+    "overflow": false
+  },
+  {
+    "slide": 9,
+    "title": "Fine-tuned learning-based data fusion",
+    "layout": "fine-tuning-method",
+    "checked_text_blocks": 19,
+    "overflow": false
+  },
+  {
+    "slide": 10,
+    "title": "YOLO: from fused images to pedestrians",
+    "layout": "yolo-threshold",
+    "checked_text_blocks": 9,
+    "overflow": false
+  },
+  {
+    "slide": 11,
+    "title": "Interface",
+    "layout": "demo-transition",
+    "checked_text_blocks": 9,
+    "overflow": false
+  },
+  {
+    "slide": 12,
+    "title": "Performance of the three fusion methods",
+    "layout": "performance-comparison",
+    "checked_text_blocks": 3,
+    "overflow": false
+  },
+  {
+    "slide": 13,
+    "title": "Two data fusion problems and their solutions",
+    "layout": "challenges",
+    "checked_text_blocks": 6,
+    "overflow": false
+  },
+  {
+    "slide": 14,
+    "title": "Three things I learned from this project",
+    "layout": "lessons-learned",
+    "checked_text_blocks": 5,
+    "overflow": false
+  },
+  {
+    "slide": 15,
+    "title": "Thank you for your attention",
+    "layout": "thanks",
+    "checked_text_blocks": 1,
+    "overflow": false
+  }
+]

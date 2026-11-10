@@ -1,0 +1,11 @@
+{
+  "base_sha256": "1598a25c6b3e08f5819b26b618afb0bf74fc94a26f6576a60fc78c7fcdd85a7b",
+  "manifest_sha256": "fc47f826047ce5052f924104324e9e7505f00ab09ebc397ce4b0110cef0ebbda",
+  "low_size": [
+    32,
+    40
+  ],
+  "width": 320,
+  "rain_version": 1,
+  "feature": "input to original output_f convolution"
+}

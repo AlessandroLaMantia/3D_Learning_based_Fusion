@@ -1,0 +1,1814 @@
+[
+  {
+    "title": "Pedestrian detection with 3 types of data fusion",
+    "subtitle": "",
+    "note": "The goal is to find out whether adapting visible–thermal fusion helps detect more pedestrians when rain degrades the visible image. We use real images and simulated rain. We compare fixed averaging, AMG-Fuse-guided fusion before adaptation and the same fusion after adaptation. The detector remains identical. This version replaces the earlier small experiment with pseudo references.",
+    "layout": "cover",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 1.1,
+        "y": 1.6,
+        "w": 11.133,
+        "h": 0.45,
+        "text": "LEARNING-BASED DATA FUSION",
+        "size": 15,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1.1,
+        "y": 2.65,
+        "w": 11.133,
+        "h": 1.65,
+        "text": "Pedestrian detection\nwith 3 types of data fusion",
+        "size": 38,
+        "color": "#183249",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1.1,
+        "y": 4.9,
+        "w": 11.133,
+        "h": 0.65,
+        "text": "Alessandro La Mantia",
+        "size": 25,
+        "color": "#087d94",
+        "bold": false,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Objective: compare three fusion methods",
+    "subtitle": "",
+    "note": "We compare three ways of combining the same visible and thermal images with simulated rain: fixed averaging, a pretrained network and the same network after fine-tuning. All methods are evaluated on the same 50 test images with the same frozen detector. We measure detected pedestrians and false positives: improvement must be verified rather than assumed.",
+    "layout": "objective-comparison",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Objective: compare three fusion methods",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 02",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 0.8,
+        "y": 2.7,
+        "w": 3.8,
+        "h": 2.5,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 1.0,
+        "y": 3.533333333333333,
+        "w": 3.4,
+        "h": 1.35,
+        "text": "no\nlearning-based\ndata fusion",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 4.8,
+        "y": 2.7,
+        "w": 3.8,
+        "h": 2.5,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 5.0,
+        "y": 3.533333333333333,
+        "w": 3.4,
+        "h": 1.35,
+        "text": "learning-based\ndata fusion",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 8.8,
+        "y": 2.7,
+        "w": 3.8,
+        "h": 2.5,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 9.0,
+        "y": 3.325,
+        "w": 3.4,
+        "h": 1.35,
+        "text": "fine tuned\nlearning-based\ndata fusion",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 3.0444340277777777,
+        "y": 5.6,
+        "w": 4.0759375,
+        "h": 0.45,
+        "text": "Do the network and fine-tuning help",
+        "size": 16,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 7.200371527777778,
+        "y": 5.6,
+        "w": 3.1281944444444445,
+        "h": 0.45,
+        "text": "detect more pedestrians",
+        "size": 16,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 6.05,
+        "w": 11.3,
+        "h": 0.6,
+        "text": "compared with non-learning-based data fusion?",
+        "size": 18,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Dataset: AWMM-100K and two image types",
+    "subtitle": "",
+    "note": "We use LLVIP, a dataset of visible and thermal image pairs of the same scene, mainly in low light. The images shown are the original pair from the same scene: a standard colour camera on the left and an infrared thermal camera on the right. They are already aligned and have annotated pedestrian boxes. Of the full dataset of 15,488 pairs, we use 170: 100 to update the weights, 20 for validation and 50 for testing. We add artificial rain only to the visible image; the thermal image remains unchanged. LLVIP is not a real rain dataset.",
+    "layout": "dataset-inputs",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Dataset: AWMM-100K and two image types",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 24,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 03",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "image",
+        "x": 0.9,
+        "y": 2.5,
+        "w": 5.45,
+        "h": 3.1,
+        "path": "C:\\Users\\LENOVO\\Desktop\\Università Parma\\Esami\\2° Anno\\1° Semestre\\3D Perception, Learning-Based Data Fusion\\Progetti\\Progetto 3\\presentazione\\figure\\visible_original.png"
+      },
+      {
+        "kind": "image",
+        "x": 6.95,
+        "y": 2.5,
+        "w": 5.45,
+        "h": 3.1,
+        "path": "C:\\Users\\LENOVO\\Desktop\\Università Parma\\Esami\\2° Anno\\1° Semestre\\3D Perception, Learning-Based Data Fusion\\Progetti\\Progetto 3\\presentazione\\figure\\thermal.png"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 5.75,
+        "w": 5.3,
+        "h": 0.5,
+        "text": "Visible: colour camera",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 7,
+        "y": 5.75,
+        "w": 5.3,
+        "h": 0.5,
+        "text": "Thermal: infrared camera",
+        "size": 20,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 6.45,
+        "w": 11.3,
+        "h": 0.4,
+        "text": "AWMM-100K: pretraining. Images shown: LLVIP, used for our fine-tuning.",
+        "size": 16,
+        "color": "#51677b",
+        "bold": false,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Artificial rain in our experiment",
+    "subtitle": "In our experiment, artificial rain is added only to the colour camera images.",
+    "note": "We show the same colour image as on the previous slide after applying the artificial rain used in the experiment. It is not a photograph taken in real rain. The thermal image of the same scene remains unchanged. The goal is to compare the three types of data fusion — fixed averaging, a pretrained network and the network after fine-tuning — using the same pair of inputs: the colour image with simulated rain and the infrared camera image. The detector remains identical in all three comparisons.",
+    "layout": "rain-input",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Artificial rain in our experiment",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "In our experiment, artificial rain is added only to the colour camera images.",
+        "size": 14,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 04",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "image",
+        "x": 4.16,
+        "y": 2.65,
+        "w": 5,
+        "h": 3.1,
+        "path": "C:\\Users\\LENOVO\\Desktop\\Università Parma\\Esami\\2° Anno\\1° Semestre\\3D Perception, Learning-Based Data Fusion\\Progetti\\Progetto 3\\presentazione\\figure\\visible.png"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 5.95,
+        "w": 11.3,
+        "h": 0.4,
+        "text": "Goal: compare the 3 types of data fusion using",
+        "size": 20,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 6.4,
+        "w": 11.3,
+        "h": 0.4,
+        "text": "the image with rain and the infrared camera image",
+        "size": 20,
+        "color": "#183249",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "The complete pipeline:",
+    "subtitle": "",
+    "note": "The visible image with rain and the thermal image enter the fusion process. The fusion process block represents one of the three methods being compared: fixed averaging, pretrained fusion or fusion after fine-tuning. Each method produces one fused image, which the same YOLO detector analyses to detect pedestrians.",
+    "layout": "complete-pipeline",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "The complete pipeline:",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 05",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 0.75,
+        "y": 3.15,
+        "w": 2.65,
+        "h": 1.2,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 0.83,
+        "y": 3.4299999999999997,
+        "w": 2.4899999999999998,
+        "h": 0.8,
+        "text": "Visible image\nwith rain",
+        "size": 17,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 0.75,
+        "y": 4.75,
+        "w": 2.65,
+        "h": 1.2,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 0.83,
+        "y": 5.03,
+        "w": 2.4899999999999998,
+        "h": 0.8,
+        "text": "Thermal image",
+        "size": 17,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 4.05,
+        "y": 3.95,
+        "w": 2.65,
+        "h": 1.2,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 4.13,
+        "y": 4.23,
+        "w": 2.4899999999999998,
+        "h": 0.8,
+        "text": "Fusion process\n(method 1/2/3)",
+        "size": 17,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 7.15,
+        "y": 3.95,
+        "w": 1.65,
+        "h": 1.2,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 7.23,
+        "y": 4.23,
+        "w": 1.49,
+        "h": 0.8,
+        "text": "Fused\nimage",
+        "size": 17,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 9.25,
+        "y": 3.95,
+        "w": 1.1,
+        "h": 1.2,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 9.33,
+        "y": 4.38,
+        "w": 0.9400000000000001,
+        "h": 0.8,
+        "text": "YOLO",
+        "size": 17,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 10.8,
+        "y": 3.95,
+        "w": 1.8,
+        "h": 1.2,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 10.88,
+        "y": 4.23,
+        "w": 1.6400000000000001,
+        "h": 0.8,
+        "text": "Detected\npedestrians",
+        "size": 17,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 3.4,
+        "y": 3.74,
+        "w": 0.3,
+        "h": 0.025,
+        "color": "#087d94"
+      },
+      {
+        "kind": "rect",
+        "x": 3.4,
+        "y": 5.34,
+        "w": 0.3,
+        "h": 0.025,
+        "color": "#087d94"
+      },
+      {
+        "kind": "rect",
+        "x": 3.68,
+        "y": 3.74,
+        "w": 0.025,
+        "h": 1.625,
+        "color": "#087d94"
+      },
+      {
+        "kind": "rect",
+        "x": 3.68,
+        "y": 4.54,
+        "w": 0.1,
+        "h": 0.025,
+        "color": "#087d94"
+      },
+      {
+        "kind": "text",
+        "x": 3.73,
+        "y": 4.29,
+        "w": 0.4,
+        "h": 0.55,
+        "text": "→",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 6.72,
+        "y": 4.29,
+        "w": 0.4,
+        "h": 0.55,
+        "text": "→",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 8.82,
+        "y": 4.29,
+        "w": 0.4,
+        "h": 0.55,
+        "text": "→",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 10.37,
+        "y": 4.29,
+        "w": 0.4,
+        "h": 0.55,
+        "text": "→",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "1) No learning-based data fusion",
+    "subtitle": "",
+    "note": "This method combines already aligned images without learning from data. At each position, it takes the normalised visible and thermal values and averages them: F = 0.5 V + 0.5 T. The single thermal channel is replicated to combine it with the three colour channels. The example of 100 and 200 averaging to 150 uses illustrative values on a common scale, not temperatures in degrees. The weights remain 50% and 50% in every region and scene, even when an input is degraded. There are no fusion weights to train. The fused image is then fed to the same YOLO detector used by the other two methods. “Non-learning-based” refers to fusion, not the detector.",
+    "layout": "fixed-average",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "1) No learning-based data fusion",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 06",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 2.05,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "Rule: average the corresponding pixels of the two images",
+        "size": 23,
+        "color": "#183249",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 1,
+        "y": 2.95,
+        "w": 11.3,
+        "h": 1.8,
+        "color": "#dcebf0"
+      },
+      {
+        "kind": "text",
+        "x": 1.45,
+        "y": 3.55,
+        "w": 4.1,
+        "h": 0.65,
+        "text": "Fused image =",
+        "size": 28,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 5.75,
+        "y": 3.2,
+        "w": 5.8,
+        "h": 0.6,
+        "text": "Visible + Thermal",
+        "size": 28,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 5.95,
+        "y": 3.86,
+        "w": 5.4,
+        "h": 0.025,
+        "color": "#087d94"
+      },
+      {
+        "kind": "text",
+        "x": 5.75,
+        "y": 4.05,
+        "w": 5.8,
+        "h": 0.6,
+        "text": "2",
+        "size": 28,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 5.15,
+        "w": 11.3,
+        "h": 1.6,
+        "text": "Each pixel receives half its contribution from\neach image.\nThe weights are the same everywhere:\nthe fusion does not learn.",
+        "size": 19,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "2) Learning-based data fusion",
+    "subtitle": "",
+    "note": "We use AMG-Fuse’s MSAKNet, loading the authors’ Haze checkpoint, already trained for visible–infrared fusion in haze. We do not start from random weights and perform no fine-tuning of our own in this second method. The network contains convolutions for local structures and Transformer blocks with attention to relate features. The visible, thermal and fusion branches exchange information at multiple scales. Features are learned numerical maps, not pedestrian labels. To run on the CPU, we reduce both inputs to 40 × 32 pixels, extract features before the final output_f convolution and apply this original layer to obtain a small RGB reconstruction. The next slide explains how this reconstruction guides fusion of the 320 × 256 inputs. This is an AMG-Fuse-guided variant, distinct from its native full-resolution output.",
+    "layout": "neural-fusion",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "2) Learning-based data fusion",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 07",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 1.95,
+        "w": 3.6060460069444447,
+        "h": 0.55,
+        "text": "• Pretrained network used:",
+        "size": 19,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 4.686046006944444,
+        "y": 1.95,
+        "w": 1.5239626736111112,
+        "h": 0.55,
+        "text": "AMG-Fuse",
+        "size": 19,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 2.4,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "• Dataset used: AWMM-100K with 1,000 image pairs",
+        "size": 19,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 2.85,
+        "w": 9.857890624999998,
+        "h": 0.55,
+        "text": "• AMG-Fuse processes visible and thermal inputs to directly produce an image",
+        "size": 18,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 10.937890624999998,
+        "y": 2.85,
+        "w": 0.2325,
+        "h": 0.55,
+        "text": "R",
+        "size": 18,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 0.8,
+        "y": 3.85,
+        "w": 3.7,
+        "h": 0.9,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 0.92,
+        "y": 4.1,
+        "w": 3.46,
+        "h": 0.5,
+        "text": "1. Extracts features",
+        "size": 18,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 0.92,
+        "y": 5.05,
+        "w": 3.46,
+        "h": 1.15,
+        "text": "Finds edges and contrasts\nin the two inputs.",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 4.8,
+        "y": 3.85,
+        "w": 3.7,
+        "h": 0.9,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 4.92,
+        "y": 4.1,
+        "w": 3.46,
+        "h": 0.5,
+        "text": "2. Combines them",
+        "size": 18,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 4.92,
+        "y": 5.05,
+        "w": 3.46,
+        "h": 1.15,
+        "text": "Combines information\nthrough attention.",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 8.8,
+        "y": 3.85,
+        "w": 3.7,
+        "h": 0.9,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 8.92,
+        "y": 4.1,
+        "w": 3.46,
+        "h": 0.5,
+        "text": "3. Reconstructs",
+        "size": 18,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 8.92,
+        "y": 5.05,
+        "w": 3.46,
+        "h": 0.45,
+        "text": "Produces an initial",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 9.5115625,
+        "y": 5.4,
+        "w": 2.0150694444444444,
+        "h": 0.45,
+        "text": "combined image",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 11.606631944444445,
+        "y": 5.4,
+        "w": 0.2218055555555556,
+        "h": 0.45,
+        "text": "R",
+        "size": 17,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 4.5,
+        "y": 4.06,
+        "w": 0.3,
+        "h": 0.55,
+        "text": "→",
+        "size": 21,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 8.5,
+        "y": 4.06,
+        "w": 0.3,
+        "h": 0.55,
+        "text": "→",
+        "size": 21,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "How the network guides fusion",
+    "subtitle": "The code takes R, then computes α by comparing it with the two inputs.",
+    "note": "The network does not directly produce the alpha map used in our final blend. First, output_f reconstructs a result R at 40 × 32 pixels. At each position, we compute the mean squared distance across the three channels between R and the reduced visible input, dV, and between R and the reduced thermal input, dT. The thermal input is expanded to three channels. We define alpha = sigmoid(4 × (dT − dV)). If R is closer to the visible input, dV is smaller than dT and alpha exceeds 0.5; if it is closer to the thermal input, alpha is below 0.5. The sigmoid keeps coefficients between zero and one. We enlarge the map to 320 × 256 with bilinear interpolation and compute F = alpha V + (1 − alpha) T, using the higher-resolution inputs to retain detail. Fixed averaging corresponds to alpha always equal to 0.5; here alpha depends on the inputs and varies by position. For example, alpha = 0.8 means 80% visible and 20% thermal: this illustrates its interpretation and is not a measured value. Alpha is not a reliability probability. Any detection benefit must be measured with YOLO. This procedure is our AMG-Fuse-guided variant, not its native full-resolution output.",
+    "layout": "neural-fusion-weights",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "How the network guides fusion",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "The code takes R, then computes α by comparing it with the two inputs.",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 08",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 2.55,
+        "w": 11.3,
+        "h": 0.7,
+        "text": "• R closer to visible → α > 0.5 → greater visible contribution.",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 3.1,
+        "w": 11.3,
+        "h": 0.7,
+        "text": "• R closer to thermal → α < 0.5 → greater thermal contribution.",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 1,
+        "y": 4.15,
+        "w": 11.3,
+        "h": 0.75,
+        "color": "#dcebf0"
+      },
+      {
+        "kind": "text",
+        "x": 1.2,
+        "y": 4.33,
+        "w": 10.9,
+        "h": 0.5,
+        "text": "Fused image = α × Visible + (1 − α) × Thermal",
+        "size": 25,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 5.15,
+        "w": 11.3,
+        "h": 0.35,
+        "text": "Fixed average: α = 0.5 everywhere. Here, the weight varies with the scene and position.",
+        "size": 16,
+        "color": "#183249",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Fine-tuned learning-based data fusion",
+    "subtitle": "",
+    "note": "Fine-tuning starts from pretrained weights, not a random network. We use 100 LLVIP pairs with simulated rain on the visible input and ground truth pedestrian annotations for 3 epochs. Fusion produces an image and YOLO proposes pedestrians. The loss compares classification and location with ground truth boxes; backpropagation passes through the detector and updates only the 2,592 weights of AMG-Fuse’s final layer. The rest of the fusion network and the entire detector remain frozen. A small regularisation term limits deviation of the map from its initial version. The 20 validation pairs recommend a checkpoint; we nevertheless compare the weights actually updated after three epochs on the 50 test pairs. The common detector is prepared before the comparison and remains identical across the three methods. Validation recommends the original weights: fine-tuning is not presented as a guaranteed improvement.",
+    "layout": "fine-tuning-method",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Fine-tuned learning-based data fusion",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 09",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 1.95,
+        "w": 8.097610677083333,
+        "h": 0.55,
+        "text": "• We start with the same AMG-Fuse and adapt only the",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 9.177610677083333,
+        "y": 1.95,
+        "w": 1.5709765625,
+        "h": 0.55,
+        "text": "last layer",
+        "size": 21,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 2.5,
+        "w": 0.21203776041666667,
+        "h": 0.55,
+        "text": "•",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1.2920377604166666,
+        "y": 2.5,
+        "w": 2.273756510416667,
+        "h": 0.55,
+        "text": "LLVIP dataset",
+        "size": 21,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 3.6457942708333335,
+        "y": 2.5,
+        "w": 2.598326822916667,
+        "h": 0.55,
+        "text": ": 100 image pairs",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 3.05,
+        "w": 1.6414322916666668,
+        "h": 0.55,
+        "text": "• 3 epochs:",
+        "size": 20,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 2.721432291666667,
+        "y": 3.05,
+        "w": 0.9186024305555557,
+        "h": 0.55,
+        "text": "2,592",
+        "size": 20,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 3.7200347222222225,
+        "y": 3.05,
+        "w": 2.3646527777777777,
+        "h": 0.55,
+        "text": "updated weights",
+        "size": 20,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 0.8,
+        "y": 4.15,
+        "w": 3.7,
+        "h": 0.9,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 0.92,
+        "y": 4.4,
+        "w": 3.46,
+        "h": 0.5,
+        "text": "1. Detection",
+        "size": 18,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 0.92,
+        "y": 5.35,
+        "w": 3.46,
+        "h": 1.05,
+        "text": "Fused image → YOLO →\npedestrian boxes.",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 4.8,
+        "y": 4.15,
+        "w": 3.7,
+        "h": 0.9,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 4.92,
+        "y": 4.4,
+        "w": 3.46,
+        "h": 0.5,
+        "text": "2. Error",
+        "size": 18,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 4.92,
+        "y": 5.35,
+        "w": 3.46,
+        "h": 1.05,
+        "text": "Comparison with the ground\ntruth boxes in the dataset.",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 8.8,
+        "y": 4.15,
+        "w": 3.7,
+        "h": 0.9,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 8.92,
+        "y": 4.4,
+        "w": 3.46,
+        "h": 0.5,
+        "text": "3. Update",
+        "size": 18,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 8.92,
+        "y": 5.35,
+        "w": 3.46,
+        "h": 1.05,
+        "text": "The error updates only\nthe final fusion layer.",
+        "size": 17,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 4.5,
+        "y": 4.36,
+        "w": 0.3,
+        "h": 0.55,
+        "text": "→",
+        "size": 21,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 8.5,
+        "y": 4.36,
+        "w": 0.3,
+        "h": 0.55,
+        "text": "→",
+        "size": 21,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "YOLO: from fused images to pedestrians",
+    "subtitle": "Each fused image from the three methods is fed separately into the same YOLO.",
+    "note": "Images produced by fixed averaging, pretrained fusion and fusion after fine-tuning are analysed separately by the same YOLO detector with identical parameters. YOLO searches for pedestrians and proposes rectangles with confidence scores. The threshold is the minimum score required to retain a detection: at 0.30, a proposal scoring 0.75 is shown and one scoring 0.20 is hidden. Raising the threshold shows fewer proposals: it may remove false alarms but also lose correct pedestrians. Lowering it shows more proposals: it may recover pedestrians but also add false alarms. The score is not a calibrated probability. In the demo, the slider changes only the displayed boxes; aggregate results are computed at the shared threshold of 0.30 chosen on validation.",
+    "layout": "yolo-threshold",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "YOLO: from fused images to pedestrians",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "Each fused image from the three methods is fed separately into the same YOLO.",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 10",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 1,
+        "y": 2.65,
+        "w": 11.3,
+        "h": 0.85,
+        "color": "#dcebf0"
+      },
+      {
+        "kind": "text",
+        "x": 1.2,
+        "y": 2.87,
+        "w": 10.9,
+        "h": 0.5,
+        "text": "Fused image → YOLO → pedestrian boxes + scores",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 3.75,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "Threshold = minimum score required to show a detection.",
+        "size": 23,
+        "color": "#183249",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 1,
+        "y": 4.65,
+        "w": 5.35,
+        "h": 1.8,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 1.2,
+        "y": 4.85,
+        "w": 4.95,
+        "h": 0.5,
+        "text": "Higher threshold ↑",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 1.2,
+        "y": 5.4,
+        "w": 4.95,
+        "h": 0.95,
+        "text": "Fewer boxes shown.\nMay reduce false alarms,\nbut also miss real pedestrians.",
+        "size": 18,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      },
+      {
+        "kind": "rect",
+        "x": 6.95,
+        "y": 4.65,
+        "w": 5.35,
+        "h": 1.8,
+        "color": "#ffffff"
+      },
+      {
+        "kind": "text",
+        "x": 7.15,
+        "y": 4.85,
+        "w": 4.95,
+        "h": 0.5,
+        "text": "Lower threshold ↓",
+        "size": 22,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      },
+      {
+        "kind": "text",
+        "x": 7.15,
+        "y": 5.4,
+        "w": 4.95,
+        "h": 0.95,
+        "text": "More boxes shown.\nMay recover pedestrians,\nbut also add false alarms.",
+        "size": 18,
+        "color": "#183249",
+        "bold": false,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Interface",
+    "subtitle": "",
+    "note": "We now compare the three methods on the same 50 test pairs, separate from training, using the same YOLO. The local interface is available at http://127.0.0.1:64001 after running AVVIA_DEMO.cmd. We first show one scene with both inputs, the three fused images and detections, then the aggregate results.",
+    "layout": "demo-transition",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Interface",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 11",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 2.0881449652777775,
+        "y": 2.6,
+        "w": 6.934010416666667,
+        "h": 0.6,
+        "text": "We now compare the three methods on the same",
+        "size": 20,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 9.102155381944446,
+        "y": 2.6,
+        "w": 0.4265451388888889,
+        "h": 0.6,
+        "text": "50",
+        "size": 20,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 9.608700520833334,
+        "y": 2.6,
+        "w": 1.6761545138888891,
+        "h": 0.6,
+        "text": "image pairs",
+        "size": 20,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 2.9707230902777777,
+        "y": 3.15,
+        "w": 5.231720920138889,
+        "h": 0.6,
+        "text": "from the LLVIP test set using the",
+        "size": 23,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 8.282444010416667,
+        "y": 3.15,
+        "w": 2.119832899305556,
+        "h": 0.6,
+        "text": "SAME YOLO",
+        "size": 23,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "rect",
+        "x": 1.5,
+        "y": 4.35,
+        "w": 10.3,
+        "h": 1.05,
+        "color": "#dcebf0"
+      },
+      {
+        "kind": "text",
+        "x": 1.7,
+        "y": 4.65,
+        "w": 9.9,
+        "h": 0.6,
+        "text": "http://127.0.0.1:64001",
+        "size": 28,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "title": "Performance of the three fusion methods",
+    "subtitle": "50 LLVIP test pairs · 128 annotated pedestrians · same frozen YOLO",
+    "note": "The chart compares the three fusion methods on the same held-out test set using the same frozen detector. Recall measures how many annotated pedestrians are detected; precision measures how many predictions are correct. AP50 summarises the precision–recall curve at IoU 0.50 over proposals scoring at least 0.05. Counts, recall and precision use the shared validation-selected score threshold of 0.30. The counts show detected pedestrians, missed pedestrians and false positives. Fine-tuning yields +11 detected pedestrians and +6 false positives compared with pretrained fusion. The experiment evaluates epoch 3; validation recommends epoch 0. The rain is simulated.",
+    "layout": "performance-comparison",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Performance of the three fusion methods",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 1.85,
+        "w": 11.8,
+        "h": 0.6,
+        "text": "50 LLVIP test pairs · 128 annotated pedestrians · same frozen YOLO",
+        "size": 17,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 12",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "image",
+        "x": 0.65,
+        "y": 2.45,
+        "w": 12.03,
+        "h": 4.25,
+        "path": "C:\\Users\\LENOVO\\Desktop\\Università Parma\\Esami\\2° Anno\\1° Semestre\\3D Perception, Learning-Based Data Fusion\\Progetti\\Progetto 3\\presentazione\\figure\\performance_en.png"
+      }
+    ]
+  },
+  {
+    "title": "Two data fusion problems and their solutions",
+    "subtitle": "",
+    "note": "1. Giving equal weight to images of different quality. I used spatially varying weights guided by the network.\n\n2. Risking the loss of pedestrian details. I applied the enlarged weight map to the original images.",
+    "layout": "challenges",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Two data fusion problems and their solutions",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 2.65,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "1. Giving equal weight to images of different quality",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 3.28,
+        "w": 11.3,
+        "h": 0.85,
+        "text": "I used spatially varying weights guided by the network.",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 4.45,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "2. Risking the loss of pedestrian details",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 5.08,
+        "w": 11.3,
+        "h": 0.85,
+        "text": "I applied the enlarged weight map to the original images.",
+        "size": 21,
+        "color": "#183249",
+        "bold": false,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 13",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      }
+    ]
+  },
+  {
+    "title": "Three things I learned from this project",
+    "subtitle": "",
+    "note": "1. Combining two sensors. Visible and thermal images provide different information: combining them can help detect pedestrians.\n\n2. Adapting a pretrained network. Existing weights can be reused while updating only a small part of the network.\n\n3. Evaluating an improvement. Detecting more pedestrians is not enough: false positives must also be checked.",
+    "layout": "lessons-learned",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 0.9,
+        "w": 11.8,
+        "h": 0.85,
+        "text": "Three things I learned from this project",
+        "size": 31,
+        "color": "#183249",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 2.35,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "1. Combining two sensors",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 3.75,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "2. Adapting a pretrained network",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 1,
+        "y": 5.15,
+        "w": 11.3,
+        "h": 0.55,
+        "text": "3. Evaluating an improvement",
+        "size": 24,
+        "color": "#087d94",
+        "bold": true,
+        "align": "left"
+      },
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 7.05,
+        "w": 11.8,
+        "h": 0.23,
+        "text": "Alessandro La Mantia 14",
+        "size": 10,
+        "color": "#51677b",
+        "bold": false,
+        "align": "left"
+      }
+    ]
+  },
+  {
+    "title": "Thank you for your attention",
+    "subtitle": "",
+    "note": "",
+    "layout": "thanks",
+    "elements": [
+      {
+        "kind": "text",
+        "x": 0.75,
+        "y": 3.25,
+        "w": 11.8,
+        "h": 1,
+        "text": "Thank you for your attention",
+        "size": 38,
+        "color": "#087d94",
+        "bold": true,
+        "align": "center"
+      }
+    ]
+  }
+]

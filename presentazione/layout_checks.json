@@ -1,0 +1,107 @@
+[
+  {
+    "slide": 1,
+    "title": "Riconoscimento pedoni con 3 tipi di data fusion",
+    "layout": "cover",
+    "checked_text_blocks": 3,
+    "overflow": false
+  },
+  {
+    "slide": 2,
+    "title": "Obiettivo: confrontare tre fusioni",
+    "layout": "objective-comparison",
+    "checked_text_blocks": 9,
+    "overflow": false
+  },
+  {
+    "slide": 3,
+    "title": "Dataset: AWMM-100K e due tipi di immagini",
+    "layout": "dataset-inputs",
+    "checked_text_blocks": 6,
+    "overflow": false
+  },
+  {
+    "slide": 4,
+    "title": "Pioggia artificiale nel nostro esperimento",
+    "layout": "rain-input",
+    "checked_text_blocks": 5,
+    "overflow": false
+  },
+  {
+    "slide": 5,
+    "title": "Il percorso completo è questo:",
+    "layout": "complete-pipeline",
+    "checked_text_blocks": 13,
+    "overflow": false
+  },
+  {
+    "slide": 6,
+    "title": "1) No learning-based data fusion",
+    "layout": "fixed-average",
+    "checked_text_blocks": 8,
+    "overflow": false
+  },
+  {
+    "slide": 7,
+    "title": "2) Learning-based data fusion",
+    "layout": "neural-fusion",
+    "checked_text_blocks": 18,
+    "overflow": false
+  },
+  {
+    "slide": 8,
+    "title": "Come la rete guida la fusione",
+    "layout": "neural-fusion-weights",
+    "checked_text_blocks": 7,
+    "overflow": false
+  },
+  {
+    "slide": 9,
+    "title": "Fine-tuned learning-based data fusion",
+    "layout": "fine-tuning-method",
+    "checked_text_blocks": 19,
+    "overflow": false
+  },
+  {
+    "slide": 10,
+    "title": "YOLO: dalle immagini fuse ai pedoni",
+    "layout": "yolo-threshold",
+    "checked_text_blocks": 9,
+    "overflow": false
+  },
+  {
+    "slide": 11,
+    "title": "Interfaccia",
+    "layout": "demo-transition",
+    "checked_text_blocks": 9,
+    "overflow": false
+  },
+  {
+    "slide": 12,
+    "title": "Prestazioni dei tre metodi di fusione",
+    "layout": "performance-comparison",
+    "checked_text_blocks": 3,
+    "overflow": false
+  },
+  {
+    "slide": 13,
+    "title": "Due problemi nella data fusion e le soluzioni",
+    "layout": "challenges",
+    "checked_text_blocks": 6,
+    "overflow": false
+  },
+  {
+    "slide": 14,
+    "title": "Tre cose imparate in questo progetto",
+    "layout": "lessons-learned",
+    "checked_text_blocks": 5,
+    "overflow": false
+  },
+  {
+    "slide": 15,
+    "title": "Grazie per l'attenzione",
+    "layout": "thanks",
+    "checked_text_blocks": 1,
+    "overflow": false
+  }
+]

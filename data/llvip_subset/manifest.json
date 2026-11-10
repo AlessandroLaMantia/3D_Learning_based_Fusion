@@ -1,0 +1,5858 @@
+[
+  {
+    "id": "130097",
+    "split": "train",
+    "scene": "13",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\130097.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\130097.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\130097.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        731.0,
+        502.0,
+        807.0,
+        724.0
+      ],
+      [
+        798.0,
+        363.0,
+        890.0,
+        589.0
+      ],
+      [
+        881.0,
+        407.0,
+        955.0,
+        618.0
+      ],
+      [
+        45.0,
+        724.0,
+        148.0,
+        945.0
+      ],
+      [
+        128.0,
+        689.0,
+        212.0,
+        872.0
+      ],
+      [
+        1041.0,
+        688.0,
+        1103.0,
+        886.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "3096ae8f9f5a46f8ccd1b6deebe659211c8c847bea885db459cbe7516a4b2377",
+      "thermal": "17d375ff0909e4502196d21481ce40ad2d9d935afc9c304e78e8d764772385e9",
+      "annotation": "071e9e2ff025ccb19527ae16f5e52d972ebf3c140d8ce7d187a3b66ddc9ad345"
+    }
+  },
+  {
+    "id": "100572",
+    "split": "train",
+    "scene": "10",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\100572.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\100572.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\100572.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        58.0,
+        395.0,
+        173.0,
+        670.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "423fd598b0e1da5119972dd038d69a263a8767f76ebc668510406a46292530c8",
+      "thermal": "d8484c950c97477e2f50f9942c8b593dd91413eb6dc5957adfed2b553a490526",
+      "annotation": "153228677ffb02f1acbe26b801b5d64dbac0ca3824c6d8cf96054f8b7ce76c31"
+    }
+  },
+  {
+    "id": "090016",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090016.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090016.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090016.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1.0,
+        361.0,
+        108.0,
+        556.0
+      ],
+      [
+        889.0,
+        698.0,
+        999.0,
+        960.0
+      ],
+      [
+        976.0,
+        702.0,
+        1060.0,
+        920.0
+      ],
+      [
+        1154.0,
+        287.0,
+        1271.0,
+        513.0
+      ],
+      [
+        1229.0,
+        224.0,
+        1279.0,
+        489.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "5fa9dfbf741bebf328fe7519cb998c854983da5d2703dc9b463965e592e99b5d",
+      "thermal": "c807d511c0bd917da6dbd608a6fe6e1760acb396f4d5e8174494ce9125ce0fad",
+      "annotation": "03fc931279901ed878d1a1158924a6396c58c33d951268e2765ea1e6547f31a8"
+    }
+  },
+  {
+    "id": "091036",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\091036.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\091036.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\091036.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        548.0,
+        516.0,
+        688.0,
+        799.0
+      ],
+      [
+        731.0,
+        796.0,
+        870.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "b767a413fe25bc788cc638d3c6fd40d1f487a6457d383b935f2ecdcc1bd37dd1",
+      "thermal": "1bd09a65bdac63f44e34cf6341ea3dec7a65e09c5decea1df1bc70a641958c5f",
+      "annotation": "5fdac1987f5de767531e82174ef869b7c4c4d51268fec956a1d2441f8c92d877"
+    }
+  },
+  {
+    "id": "081317",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\081317.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\081317.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\081317.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        962.0,
+        122.0,
+        1075.0,
+        372.0
+      ],
+      [
+        401.0,
+        577.0,
+        531.0,
+        861.0
+      ],
+      [
+        789.0,
+        660.0,
+        874.0,
+        981.0
+      ],
+      [
+        827.0,
+        707.0,
+        926.0,
+        1011.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "79731519804815dfce194a37a81f397c5b1b7dd886cc37ac2185498804f31d91",
+      "thermal": "810f53c799ab11d3c031a926fe6d0244deaa17594b23509d9a99229ea2f00060",
+      "annotation": "5fc170c161f594fe44486fa3ecb087b51893ca0317b0738f7272a32c82b4cf8e"
+    }
+  },
+  {
+    "id": "060392",
+    "split": "train",
+    "scene": "06",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\060392.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\060392.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\060392.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        802.0,
+        809.0,
+        926.0,
+        1024.0
+      ],
+      [
+        394.0,
+        791.0,
+        493.0,
+        984.0
+      ],
+      [
+        285.0,
+        451.0,
+        392.0,
+        668.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "01b19423afac3d810773ecd9ee2bf4c03ef3dadb4d0e0c64454e37a3f2f25e85",
+      "thermal": "ad7df76216e10ac6483a55e9b1aec5cfe6abb9b7bcb896ef8680b4f845c7dd84",
+      "annotation": "064717220f8b99b603513f394e19915bd5f3ec25fefc96e18ba0ce6e8b20d66d"
+    }
+  },
+  {
+    "id": "130395",
+    "split": "train",
+    "scene": "13",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\130395.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\130395.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\130395.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        278.0,
+        696.0,
+        385.0,
+        876.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "d938d9d6fb2b54bc442e62215f6838a13db9bad888d5a8c935d2b18c6299e012",
+      "thermal": "1385ff608dd44bd0b0c35af44839259ebc88c6767ed8bc80f9bf3fb79f761759",
+      "annotation": "27a5a7992c05d3acac44ebe86d284a0e4132321cfa77e7d6b512b0e89dafaa32"
+    }
+  },
+  {
+    "id": "081131",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\081131.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\081131.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\081131.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        957.0,
+        124.0,
+        1090.0,
+        378.0
+      ],
+      [
+        1001.0,
+        721.0,
+        1123.0,
+        997.0
+      ],
+      [
+        1187.0,
+        549.0,
+        1263.0,
+        739.0
+      ],
+      [
+        1197.0,
+        663.0,
+        1280.0,
+        957.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "f2f4c796dae025f48c4d6c6ab602843927dacdced836ca7f5d6acbd9ac96558d",
+      "thermal": "484e639a4b8662a0ae7eb18a8108b955d4c1a819ebacc9d9951ccf52b9faf9e4",
+      "annotation": "cbf04a3e181ec424eb665f6c9f36988104b17253cf3a36c9bd5272a776bfee50"
+    }
+  },
+  {
+    "id": "040236",
+    "split": "train",
+    "scene": "04",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\040236.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\040236.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\040236.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        652.0,
+        399.0,
+        755.0,
+        643.0
+      ],
+      [
+        615.0,
+        0,
+        704.0,
+        189.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "449bec3311c65408a6d3913409968ccc9743e865ecf3c960c452184d79f1abea",
+      "thermal": "bcd9f47c75ee0fd794c7f6180994b045017b6b4e55e209ae4ca784c29369a4eb",
+      "annotation": "41efe22c08588a8b4db9a5c81883def67512f9ba749e33057b4aaa5054201790"
+    }
+  },
+  {
+    "id": "010443",
+    "split": "train",
+    "scene": "01",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\010443.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\010443.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\010443.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        740.0,
+        379.0,
+        848.0,
+        617.0
+      ],
+      [
+        1021.0,
+        411.0,
+        1144.0,
+        646.0
+      ],
+      [
+        1030.0,
+        155.0,
+        1144.0,
+        389.0
+      ],
+      [
+        1113.0,
+        148.0,
+        1208.0,
+        396.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "a0fa97ed8f9a663e6e16491cb71f5eb6efba07258cf71b50a00af5c1a2cff13f",
+      "thermal": "cad25354cb0a005eacef63c4fd0ff10709afd6fbcf4372c433687889176397fa",
+      "annotation": "b7b11e8d36664fd0bc8ad06fad0984a3de158d077759840766526e114762cb72"
+    }
+  },
+  {
+    "id": "080647",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\080647.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\080647.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\080647.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1086.0,
+        94.0,
+        1193.0,
+        313.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "e2a740b598b659bad3c701b9e87be07db3a6cc36ce09e321527e811ea5831412",
+      "thermal": "d0e548af513b967e958c899f59fa9715d9dd4db795ffb9091bbb206408e36fc2",
+      "annotation": "067b543933a2a4e2ee2b7cabd0023ad9279b20a4d0dcae49d0a8676ae836d06c"
+    }
+  },
+  {
+    "id": "100081",
+    "split": "train",
+    "scene": "10",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\100081.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\100081.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\100081.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        390.0,
+        845.0,
+        484.0,
+        1024.0
+      ],
+      [
+        265.0,
+        785.0,
+        335.0,
+        993.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "0c1801a9f70a8d6ed92f26907f79959229ae48aab1ffcdee078f35edfe12fd05",
+      "thermal": "c628d909d51fa95622ffcbf07b7acc7a51b1534fe6a8f29eb2216f4fa2ad9f00",
+      "annotation": "b23f98495b25b620829248e00696671927c10fa87add9692fff7ac6d7968e801"
+    }
+  },
+  {
+    "id": "100661",
+    "split": "train",
+    "scene": "10",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\100661.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\100661.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\100661.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        258.0,
+        332.0,
+        335.0,
+        532.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "cac992c5a5edca6bd68d3536dfe78ace5e35f14bcab99b4d2eeb9963aa7eb6d6",
+      "thermal": "c3ac839db2d9b2b3c2b5b730f26e8a265c713078f003f9a8048564c3b4e9e66c",
+      "annotation": "8e79d90c8f1b5ce243cfbdf673266449e4b0886e00514d036aea9f25c20995e9"
+    }
+  },
+  {
+    "id": "080704",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\080704.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\080704.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\080704.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        732.0,
+        442.0,
+        848.0,
+        623.0
+      ],
+      [
+        1099.0,
+        923.0,
+        1188.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "beaf99ce9b6dbf539d2da6444e184b4828405596d91e3a0d28ad2f7caf8236dd",
+      "thermal": "84f2abbebf1c7e4e35a55f623c531efec427229773b4c7b78349a3404bfcf6b6",
+      "annotation": "a29a70ea98ef797e85cfc44e4c97ff068a154a764b360a53fd7d86f5cf09b1fe"
+    }
+  },
+  {
+    "id": "120224",
+    "split": "train",
+    "scene": "12",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\120224.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\120224.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\120224.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        726.0,
+        656.0,
+        796.0,
+        745.0
+      ],
+      [
+        736.0,
+        733.0,
+        795.0,
+        908.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "cfde6a843e90a2c745a41ae27f21cbfe00e02b460da7b9652950231b18e6670a",
+      "thermal": "51ddfba89d5e808b0ebfe8f408613e859a3de5f5ff47fb3439a7ac9c13477c27",
+      "annotation": "9f4b99c99f6210ad24f752aabf2092dc30a4e8322a80a685a4422529a3e6717d"
+    }
+  },
+  {
+    "id": "090245",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090245.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090245.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090245.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        753.0,
+        791.0,
+        859.0,
+        951.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "c5ae8e3a882a8e5f12ce21b852707b681bef53ab6162171a33013c215c7e24fa",
+      "thermal": "9936477a638d5d5e7bb168a7cc551021cec8d44e95eb15dbc3c15426741f4738",
+      "annotation": "89485df23c2c75f674e65c60a84282c50d4858082722d15b86b471e28dbc6da4"
+    }
+  },
+  {
+    "id": "250378",
+    "split": "train",
+    "scene": "25",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\250378.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\250378.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\250378.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        323.0,
+        460.0,
+        390.0,
+        689.0
+      ],
+      [
+        95.0,
+        950.0,
+        194.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "aa6b3889d743cd575fddc35c3ddd85db42f08fc3fc48ea31a1daf2d775ee1110",
+      "thermal": "b203fb7c41a496db95bdee762a67c6f899d583931c61baca5e55d95d04fce5d1",
+      "annotation": "32665c50f3f88c4609df4866dce2c72cff0a8336d4aa7c2b70e5c7a7f18226fd"
+    }
+  },
+  {
+    "id": "100366",
+    "split": "train",
+    "scene": "10",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\100366.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\100366.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\100366.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        692.0,
+        708.0,
+        806.0,
+        956.0
+      ],
+      [
+        96.0,
+        845.0,
+        226.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "73470519a4284e3b497bf111b0d3c5aa70cb7aa329081f35dd06867465f7b9d4",
+      "thermal": "531ceba5c9b3be03676ee9f317cc3abf5968b65aa39c89e727354fd497fa064e",
+      "annotation": "fcbd4a0b95314756ee79639e1cce449a1bad5f60a96b7319ef1d2c1aababcbe9"
+    }
+  },
+  {
+    "id": "050211",
+    "split": "train",
+    "scene": "05",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\050211.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\050211.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\050211.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        4.0,
+        382.0,
+        111.0,
+        636.0
+      ],
+      [
+        438.0,
+        49.0,
+        563.0,
+        304.0
+      ],
+      [
+        929.0,
+        38.0,
+        1040.0,
+        328.0
+      ],
+      [
+        1169.0,
+        170.0,
+        1276.0,
+        429.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "e34c61ecf170997d59ef0019b30c227979623aab4e6de802911331ee9998ee69",
+      "thermal": "002f406f4a423c5fd97635c1a618104bccf90c3be7576cfc8cdb2b08988a57f0",
+      "annotation": "3ac7db2b0221f6ee8f1586141c2f2916667099dd8f858de37a2bce63c4c41095"
+    }
+  },
+  {
+    "id": "140075",
+    "split": "train",
+    "scene": "14",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\140075.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\140075.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\140075.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        0,
+        325.0,
+        131.0,
+        580.0
+      ],
+      [
+        338.0,
+        502.0,
+        431.0,
+        688.0
+      ],
+      [
+        560.0,
+        327.0,
+        684.0,
+        601.0
+      ],
+      [
+        1178.0,
+        658.0,
+        1275.0,
+        871.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "4fcd2510772b7f045aacaf4fc880c4d8e1c4bf082001c51c98b2cc473489fde8",
+      "thermal": "f0e7c52011ac772d59c71f86e58b5a78f50e2f19fb4515f53c969cdd62d4e909",
+      "annotation": "298dd80f7ddac038457409e68148853ac33b0d6fd85b25072923bc9e01dc0cc0"
+    }
+  },
+  {
+    "id": "020422",
+    "split": "train",
+    "scene": "02",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\020422.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\020422.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\020422.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1053.0,
+        610.0,
+        1162.0,
+        821.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "288351c102d939f97639459a99ca5b70cad0e3fc879605a8fef9a4af5982ca64",
+      "thermal": "2a57f915a93dea2bea647ee7f40dd4d276074cd3a72220c53fd459f7b150f1e7",
+      "annotation": "5812c991b64c47323a796498534b7f2527ebd3627c7211422653becdf6524706"
+    }
+  },
+  {
+    "id": "050249",
+    "split": "train",
+    "scene": "05",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\050249.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\050249.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\050249.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        287.0,
+        116.0,
+        395.0,
+        395.0
+      ],
+      [
+        466.0,
+        401.0,
+        565.0,
+        604.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "2d8c9ad678fce29e8d1e27f04afbcadb8291f46e9a815b6f796b3fea0d0d76b6",
+      "thermal": "eb90c4bfebb4321f08140536f805ef154973b2b631c3a12aef9499e32722eadc",
+      "annotation": "5d66cc68d5ea84f901b41a5e80441bab3279240c11199b75464c53904d854fe6"
+    }
+  },
+  {
+    "id": "070236",
+    "split": "train",
+    "scene": "07",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\070236.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\070236.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\070236.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        927.0,
+        547.0,
+        1036.0,
+        751.0
+      ],
+      [
+        128.0,
+        527.0,
+        209.0,
+        753.0
+      ],
+      [
+        264.0,
+        565.0,
+        347.0,
+        784.0
+      ],
+      [
+        19.0,
+        893.0,
+        137.0,
+        1024.0
+      ],
+      [
+        327.0,
+        925.0,
+        436.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "31335f8c16891636264c6a9d6ae8e16ce44709a66d66b27a9f4a66e1c902e023",
+      "thermal": "e09df7ec923f8d38030d3fb669e1fcbb6f912e7ffa6d34dde90ef3817e6a343c",
+      "annotation": "0d4657bd0aa0522231c8e7516bff9667ca9cc7847459a051aec6aeb0765512f1"
+    }
+  },
+  {
+    "id": "060002",
+    "split": "train",
+    "scene": "06",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\060002.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\060002.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\060002.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        0,
+        376.0,
+        38.0,
+        623.0
+      ],
+      [
+        9.0,
+        356.0,
+        78.0,
+        566.0
+      ],
+      [
+        34.0,
+        354.0,
+        136.0,
+        550.0
+      ],
+      [
+        946.0,
+        687.0,
+        1023.0,
+        916.0
+      ],
+      [
+        985.0,
+        669.0,
+        1078.0,
+        900.0
+      ],
+      [
+        1013.0,
+        648.0,
+        1107.0,
+        873.0
+      ],
+      [
+        990.0,
+        577.0,
+        1095.0,
+        739.0
+      ],
+      [
+        1050.0,
+        578.0,
+        1173.0,
+        697.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "5ed3103e2cfec1913ed95f3ff34b3a7d86b0d8b7961a76ee3348fb427ce5b6e3",
+      "thermal": "d881cef0b195c9148ecceb12cf4e23a9585c2786ef9840cd0344a1e663b4b7c2",
+      "annotation": "9223b5fa7ea4251cc2e143cf8606d9ad9b30c421b0c118ce6b18a0acb99a927a"
+    }
+  },
+  {
+    "id": "130275",
+    "split": "train",
+    "scene": "13",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\130275.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\130275.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\130275.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        311.0,
+        574.0,
+        410.0,
+        784.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "26846b3fd072199081ba2a86d897fc0f6026a2d5f8c0f8dd37b083b2723fdea6",
+      "thermal": "874b496aed060a7055d41545f0e0ce10162fab6e5bf1743b74054ff335675345",
+      "annotation": "8fddde27814aa25610bbd5dac6560b84ad6350d2be359d4f658bd3091c42bf84"
+    }
+  },
+  {
+    "id": "140201",
+    "split": "train",
+    "scene": "14",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\140201.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\140201.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\140201.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        20.0,
+        268.0,
+        130.0,
+        528.0
+      ],
+      [
+        305.0,
+        833.0,
+        454.0,
+        1020.0
+      ],
+      [
+        971.0,
+        231.0,
+        1074.0,
+        483.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "3a04d2b5defb0bb4ffdddea58e147c7aca692f98026173ead0071d368f45840c",
+      "thermal": "42b87d8e2f0ecaca24fe0822fd5b70e09be98e8b768fb8c38eb9ae672e5c582e",
+      "annotation": "91283fdb4dfb1a726598df76d7815ebe62e3e3b60eef6976f72f807d26918192"
+    }
+  },
+  {
+    "id": "080003",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\080003.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\080003.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\080003.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        985.0,
+        33.0,
+        1074.0,
+        259.0
+      ],
+      [
+        364.0,
+        338.0,
+        475.0,
+        524.0
+      ],
+      [
+        439.0,
+        359.0,
+        527.0,
+        524.0
+      ],
+      [
+        1043.0,
+        887.0,
+        1136.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "c7ee1743edf47bc667f1671f931e4c3d8612f9d2feee69a372dc48214691a54b",
+      "thermal": "1a0f566975fb1675f5191f392c4310a7725a0c9f2c484bce4a7e863fe743d912",
+      "annotation": "e0d79edf232a18798aee046af64ab13fe3b7f18d3b9e0de7df097edf20aa47fd"
+    }
+  },
+  {
+    "id": "090468",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090468.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090468.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090468.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        237.0,
+        2.0,
+        332.0,
+        238.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "c13d5acdef14164ba1824762dcc66506ae49077312f78abf752ad15679d95203",
+      "thermal": "4c07e78f3e847c39a1c2e87d12b0da6bb9c6c685fa3fd4d717444346ee81099b",
+      "annotation": "ba21d34e55fcd38a948bbf80f061d1598364127193331ea9b54f7674169340b8"
+    }
+  },
+  {
+    "id": "130391",
+    "split": "train",
+    "scene": "13",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\130391.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\130391.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\130391.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        435.0,
+        513.0,
+        510.0,
+        722.0
+      ],
+      [
+        710.0,
+        560.0,
+        760.0,
+        748.0
+      ],
+      [
+        763.0,
+        524.0,
+        798.0,
+        712.0
+      ],
+      [
+        1183.0,
+        288.0,
+        1264.0,
+        472.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "7e86e189b643c99d10e84555eba87cb885376179848963ed89fa96f78e21bc6b",
+      "thermal": "2012400240c12296110f657da70df98f9cf67d23cb21cf4eac5fabcfa905f3c6",
+      "annotation": "5427f60763e604c48c0ade2f139720656d50a496f5bfefd08e6740eabc05cc6a"
+    }
+  },
+  {
+    "id": "040456",
+    "split": "train",
+    "scene": "04",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\040456.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\040456.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\040456.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        0,
+        458.0,
+        85.0,
+        650.0
+      ],
+      [
+        134.0,
+        511.0,
+        236.0,
+        761.0
+      ],
+      [
+        227.0,
+        503.0,
+        335.0,
+        739.0
+      ],
+      [
+        642.0,
+        12.0,
+        724.0,
+        213.0
+      ],
+      [
+        715.0,
+        14.0,
+        778.0,
+        224.0
+      ],
+      [
+        776.0,
+        19.0,
+        834.0,
+        217.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "f9632e1a1cc5598d89b7ce5b266e4b6d54b12da389ca5b6a0561848d42318868",
+      "thermal": "9773a51c8bcde4092a67bf43b9704248e822cae5171550b46beae664b5ddb258",
+      "annotation": "b48e566c539062309c300b49f845098c216e180d2fb2963e21da3fd8c0792b33"
+    }
+  },
+  {
+    "id": "250349",
+    "split": "train",
+    "scene": "25",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\250349.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\250349.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\250349.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1005.0,
+        354.0,
+        1115.0,
+        601.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "d320b0febda089f7f753eb339b58af0c7ec7094f695cecf59da47ded979c3122",
+      "thermal": "621c3aa0c61b3402bcfe71c8c717ccec13de7112f73bf25033bdaf37636f5937",
+      "annotation": "92c449ddccb626dd6446d266f3693af804831cfb417c8678a6c9e6f327e4a9c1"
+    }
+  },
+  {
+    "id": "030037",
+    "split": "train",
+    "scene": "03",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\030037.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\030037.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\030037.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1.0,
+        331.0,
+        97.0,
+        583.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "2c303f5bd923d9897988b509417ebbc4086b864b10ea38e2740df276a129278a",
+      "thermal": "9456017784a5c3dfd0939c569647fbbf70530755da338f6e0a206c9db8d8bf3f",
+      "annotation": "e41766d7b22480e8880b707e99de32b9804ad4258ba85b57728f08a7489a13ce"
+    }
+  },
+  {
+    "id": "090110",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090110.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090110.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090110.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        922.0,
+        165.0,
+        1001.0,
+        419.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "24dd54ec718971c59eced134e3787a3e76e1bdb4dc56efb1c09a7cbc78bdd817",
+      "thermal": "cb6913fb8c4c17e2932e35232ce5f115e0fa13771f1fb37c499c6e928a549510",
+      "annotation": "7b272bbcd2513f637d5ef2904f21da948a294228a1c7b945f3143b7bed8742ba"
+    }
+  },
+  {
+    "id": "100499",
+    "split": "train",
+    "scene": "10",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\100499.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\100499.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\100499.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        573.0,
+        278.0,
+        671.0,
+        518.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "76dff557601e4d9b38c628ec2b1bc43f7607dc4dff1803b2b828b9d78393078a",
+      "thermal": "d1162daaaef7579df80f733a729d27ec94708ed7c08309b990a51e58ff0f3163",
+      "annotation": "d902d09cad61d15c1d676f316fd7fb22a98ea0be2d05f342a2ac1f607341029a"
+    }
+  },
+  {
+    "id": "030245",
+    "split": "train",
+    "scene": "03",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\030245.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\030245.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\030245.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        263.0,
+        355.0,
+        355.0,
+        541.0
+      ],
+      [
+        353.0,
+        332.0,
+        421.0,
+        493.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "036b754fe6c89723848b6653c1fcb36d91c77585dbd08b7fd7cf4e89bcdf73d1",
+      "thermal": "e567182228d8c5d42452762f1dc77d9e9e70b0eebe886b8ec7b16a74efe330c0",
+      "annotation": "1471b6bb92e63727f222b20bce045887dc35f8d58f25fc9fd4e277db17ab5489"
+    }
+  },
+  {
+    "id": "120317",
+    "split": "train",
+    "scene": "12",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\120317.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\120317.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\120317.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1146.0,
+        419.0,
+        1210.0,
+        612.0
+      ],
+      [
+        964.0,
+        617.0,
+        1052.0,
+        791.0
+      ],
+      [
+        898.0,
+        624.0,
+        958.0,
+        805.0
+      ],
+      [
+        871.0,
+        586.0,
+        913.0,
+        770.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "bc66c53f04646a1b91936d1ec5219548197cbe370f73a48d30991dfc6c079196",
+      "thermal": "19cf9069ed98d0c4aff116ee233ce8e42710ef92b679665853a1565b3f039e99",
+      "annotation": "1e9c4f8fce8bd1d4e928d72b59b39bfd0fc16d5cc4180a2f059f982cfa0dff13"
+    }
+  },
+  {
+    "id": "110250",
+    "split": "train",
+    "scene": "11",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\110250.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\110250.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\110250.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        816.0,
+        338.0,
+        863.0,
+        519.0
+      ],
+      [
+        864.0,
+        401.0,
+        909.0,
+        514.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "2fe42bdffcc4c4573023a06f621da76cb3038621b60fb985c2590f32a36d547e",
+      "thermal": "86127c24af8e28d2ace15e581f9765af0d8c0e17bb2117fa17c0b40f0d745082",
+      "annotation": "812957533c5f2e19d92f926c4f56ab811ced059d9b0efa95c6a6cf424e48d327"
+    }
+  },
+  {
+    "id": "250372",
+    "split": "train",
+    "scene": "25",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\250372.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\250372.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\250372.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        114.0,
+        9.0,
+        214.0,
+        249.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "a63b52e75637a497e8d3bd0ce5d6cd9d03e40869e9b6d1a56496b3e4fa0fee6e",
+      "thermal": "fd24cfdf7dde00977ca05c9317aa38a584c0298a9728d3893f48f7b5f39f1c85",
+      "annotation": "8862ac4360260b4c9b2bf7fc43997997bb3e5e92d455374e38c1f63367801c0b"
+    }
+  },
+  {
+    "id": "150316",
+    "split": "train",
+    "scene": "15",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\150316.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\150316.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\150316.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        18.0,
+        233.0,
+        200.0,
+        521.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "da6867b1eff4417ed2eb28403797b8a6dc429582e2415efaeded2560d966b335",
+      "thermal": "42f19e96b3a90cab93bc15000623b15515489c3f4605f1e2578c040cbf9ba472",
+      "annotation": "ffdb97d374011b1ec93475d31a2de47a92b74265834d79b0a7c05556ab6396ef"
+    }
+  },
+  {
+    "id": "050278",
+    "split": "train",
+    "scene": "05",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\050278.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\050278.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\050278.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        842.0,
+        168.0,
+        949.0,
+        383.0
+      ],
+      [
+        965.0,
+        298.0,
+        1084.0,
+        509.0
+      ],
+      [
+        357.0,
+        196.0,
+        441.0,
+        458.0
+      ],
+      [
+        282.0,
+        184.0,
+        375.0,
+        459.0
+      ],
+      [
+        205.0,
+        24.0,
+        288.0,
+        290.0
+      ],
+      [
+        134.0,
+        46.0,
+        219.0,
+        308.0
+      ],
+      [
+        63.0,
+        37.0,
+        162.0,
+        305.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "55977e40284c51380dec83f5303ff8fc6c004910cbceb0fbbc101a1378d5ca8d",
+      "thermal": "b6300cd146f9bff8207ad95b967fbc30bca4384994a77999bee0d60275e2085d",
+      "annotation": "1710ba16b3c43ad35370282afd233bac0f3875a6195d0f7c1936c4843150b842"
+    }
+  },
+  {
+    "id": "100482",
+    "split": "train",
+    "scene": "10",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\100482.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\100482.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\100482.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        735.0,
+        134.0,
+        846.0,
+        329.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "16b093dc93c60f8ea9cce5f704fa163ae3c4f3e7d20fa959e44b267cd09408b9",
+      "thermal": "80d04edcad1a94c73408b40dea35b6f04765afa0e2459990415ac1392e565579",
+      "annotation": "1e289a0403e4594192d5d0f516b379b1c60351b41ccb3997492352e9bf7f385a"
+    }
+  },
+  {
+    "id": "120297",
+    "split": "train",
+    "scene": "12",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\120297.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\120297.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\120297.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        602.0,
+        779.0,
+        661.0,
+        959.0
+      ],
+      [
+        670.0,
+        780.0,
+        741.0,
+        938.0
+      ],
+      [
+        805.0,
+        745.0,
+        878.0,
+        919.0
+      ],
+      [
+        829.0,
+        698.0,
+        874.0,
+        770.0
+      ],
+      [
+        890.0,
+        721.0,
+        958.0,
+        892.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "c8f5da41afdefc518ad2447c278bb3e84a3c7ebbe2dc94afbd21b1a97c4484cc",
+      "thermal": "652122f2a296a1bf5d9c787923f480ee107de2301fb9d93cb6c6a6f5cf6cb0cb",
+      "annotation": "d29b39065977d84db5340ee2fe51a678e4f6827c333cc1d7a9469debb46edf02"
+    }
+  },
+  {
+    "id": "090556",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090556.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090556.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090556.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        645.0,
+        150.0,
+        737.0,
+        335.0
+      ],
+      [
+        818.0,
+        112.0,
+        924.0,
+        340.0
+      ],
+      [
+        912.0,
+        156.0,
+        998.0,
+        396.0
+      ],
+      [
+        906.0,
+        596.0,
+        1059.0,
+        867.0
+      ],
+      [
+        1143.0,
+        639.0,
+        1236.0,
+        865.0
+      ],
+      [
+        1167.0,
+        647.0,
+        1280.0,
+        917.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "ad70ee50d10ac8fa0a0255d6d94d5add7a003f90872a9a8a294f15ef1c5fba16",
+      "thermal": "19df1f7e1f87d2e2cefc5cd424fe0f82a2d2b8fde227d61ad2aa6827d6b13937",
+      "annotation": "9d3a5218e29e69a3c969b4362e10356293835302712e4aff6f2e0506e5a38ef1"
+    }
+  },
+  {
+    "id": "010294",
+    "split": "train",
+    "scene": "01",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\010294.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\010294.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\010294.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        495.0,
+        467.0,
+        562.0,
+        705.0
+      ],
+      [
+        539.0,
+        453.0,
+        600.0,
+        693.0
+      ],
+      [
+        1015.0,
+        600.0,
+        1103.0,
+        855.0
+      ],
+      [
+        1078.0,
+        612.0,
+        1166.0,
+        839.0
+      ],
+      [
+        1143.0,
+        404.0,
+        1226.0,
+        626.0
+      ],
+      [
+        1184.0,
+        294.0,
+        1280.0,
+        403.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "6a0df6aca567950a6f0d688c95f76c7a863734c1ad79c925180a0d5422da0c51",
+      "thermal": "9730af7373b448ede5cc5b5f577f6c23cc34edc6f640adf5b3633cb11ce47aa6",
+      "annotation": "acf3efefd6229b737c01575bbbb06962f47f59d0205395622e26ec46024f110c"
+    }
+  },
+  {
+    "id": "100878",
+    "split": "train",
+    "scene": "10",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\100878.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\100878.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\100878.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        664.0,
+        203.0,
+        747.0,
+        446.0
+      ],
+      [
+        741.0,
+        192.0,
+        805.0,
+        444.0
+      ],
+      [
+        912.0,
+        528.0,
+        1047.0,
+        756.0
+      ],
+      [
+        1108.0,
+        542.0,
+        1271.0,
+        783.0
+      ],
+      [
+        1169.0,
+        77.0,
+        1257.0,
+        324.0
+      ],
+      [
+        1242.0,
+        99.0,
+        1280.0,
+        325.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "f9c198a6d2bbbd75456a05372670cca97bdbec48ae5fb5c220c0b3a78154b9b4",
+      "thermal": "b4d9e31cab6294773b8549894c18aa992e07c45a0fe5ec5bb75a17f71a1489fc",
+      "annotation": "86aef4faf86cc75547810b8e28996b0061352af173aa4bc69f8dcd70e0eb4771"
+    }
+  },
+  {
+    "id": "091144",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\091144.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\091144.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\091144.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        316.0,
+        443.0,
+        470.0,
+        671.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "a3d6a212925a375f0fc437b31bd7c3def4276e2d4d3bb0186bd9ec2b9d325750",
+      "thermal": "a30231722079d7b20e2de5a0c0f1ddb80acdbc6f583dc6d18e384a11cc22278c",
+      "annotation": "5a754dc13ee8293a70da880564e6fdb091027ded8e1f11c697967402283154e5"
+    }
+  },
+  {
+    "id": "140411",
+    "split": "train",
+    "scene": "14",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\140411.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\140411.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\140411.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        306.0,
+        270.0,
+        404.0,
+        516.0
+      ],
+      [
+        167.0,
+        426.0,
+        289.0,
+        721.0
+      ],
+      [
+        302.0,
+        523.0,
+        396.0,
+        723.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "9be9e94db6460e5b210cdc96f4008bb4870955803f80c405222a1d35804930ae",
+      "thermal": "1d423ca269f96227cfe658579606e370023e34c832ebfe53eb0d9323dfe3d71c",
+      "annotation": "c329b83d129f616c474b234b840c2b33271cb92e2ef5647a4ef72dcc74ecbdeb"
+    }
+  },
+  {
+    "id": "020250",
+    "split": "train",
+    "scene": "02",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\020250.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\020250.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\020250.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        657.0,
+        454.0,
+        751.0,
+        685.0
+      ],
+      [
+        914.0,
+        504.0,
+        1035.0,
+        750.0
+      ],
+      [
+        512.0,
+        562.0,
+        648.0,
+        811.0
+      ],
+      [
+        312.0,
+        198.0,
+        398.0,
+        431.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "32e2d9eb5e778dc9427dbc0093048eb3eb74d5f1fe698cd0c5b4965a2150d527",
+      "thermal": "dc57cae95c7df7501f4793c2c62d2ed589dc9fac52e14ba0eb1a5b68ab93c25a",
+      "annotation": "31b11afd071ab78ea98dc8a54034bb378bdc4130373f3b83a83c96d94706697b"
+    }
+  },
+  {
+    "id": "090856",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090856.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090856.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090856.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        201.0,
+        45.0,
+        274.0,
+        276.0
+      ],
+      [
+        258.0,
+        46.0,
+        366.0,
+        263.0
+      ],
+      [
+        854.0,
+        284.0,
+        947.0,
+        500.0
+      ],
+      [
+        952.0,
+        249.0,
+        1055.0,
+        480.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "cf0cd99e5dd9a4dcdcffccc07c3562e32d76798d87293d290a6e6a6a1db052f5",
+      "thermal": "9abe945c55dd69edf63a527aef86faf39a36f91609d9b6a44090e41a35bb7f86",
+      "annotation": "37551ddaa1263b650c7a44d68e72f0d8fb59b1776641cc2d771d0e5fa7df1478"
+    }
+  },
+  {
+    "id": "020228",
+    "split": "train",
+    "scene": "02",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\020228.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\020228.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\020228.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        61.0,
+        578.0,
+        153.0,
+        824.0
+      ],
+      [
+        0,
+        561.0,
+        50.0,
+        794.0
+      ],
+      [
+        187.0,
+        95.0,
+        291.0,
+        286.0
+      ],
+      [
+        804.0,
+        810.0,
+        881.0,
+        1024.0
+      ],
+      [
+        1012.0,
+        620.0,
+        1074.0,
+        782.0
+      ],
+      [
+        1011.0,
+        760.0,
+        1080.0,
+        984.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "1717b60eafec0d88305b34e68c449a95227da12883d551b368532a62572f105b",
+      "thermal": "ba2a43b6b1c63a0d372644e73d36f7677497667aa01023ddb563d54ef6a5317b",
+      "annotation": "70b5eaaf8652a3ca4422bcb440e648475b7724f22b6049401530a7214637651f"
+    }
+  },
+  {
+    "id": "110304",
+    "split": "train",
+    "scene": "11",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\110304.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\110304.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\110304.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        682.0,
+        414.0,
+        749.0,
+        597.0
+      ],
+      [
+        886.0,
+        465.0,
+        970.0,
+        653.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "eb18d576b20ed6461c59384e4d9b7e58ffded451667e4f4922a51b1f00bb6696",
+      "thermal": "bb6cebddbec48bd382a1d8ab130f53f6c2154702bb7607bd4ad1a164e896a00a",
+      "annotation": "742c1d9e6a2e4d3df00aeddfffb1b6eaac62a559d327be36f33b5c433432f778"
+    }
+  },
+  {
+    "id": "091187",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\091187.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\091187.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\091187.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        848.0,
+        146.0,
+        954.0,
+        375.0
+      ],
+      [
+        1181.0,
+        204.0,
+        1271.0,
+        437.0
+      ],
+      [
+        1170.0,
+        400.0,
+        1255.0,
+        664.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "81cc47628e02951065d501a676eb178a9c7265bafb875eb9b3840f7330c1c056",
+      "thermal": "a8868093bb662e402632a11a163492437a33a2adafffb9fb5c59287d998402a4",
+      "annotation": "98695e5e004e2d45147abf784294ac1c4bee8da362bccdb5a32c6abfce19e861"
+    }
+  },
+  {
+    "id": "140548",
+    "split": "train",
+    "scene": "14",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\140548.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\140548.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\140548.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        282.0,
+        806.0,
+        421.0,
+        1024.0
+      ],
+      [
+        1064.0,
+        207.0,
+        1167.0,
+        458.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "d2897ce1994a54f4313039016acd42b3102e7e85730fc4817b01e8e25c452b9a",
+      "thermal": "4a4b172ab4e02ebbcd07fc7139f0e7a4e22a504b4967e1f14e4eb0b95506cb19",
+      "annotation": "6e8593a766566a55a5fb5a24d6bdf5ff6615228cba4e9e51489e7266229dd379"
+    }
+  },
+  {
+    "id": "010085",
+    "split": "train",
+    "scene": "01",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\010085.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\010085.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\010085.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        547.0,
+        671.0,
+        647.0,
+        911.0
+      ],
+      [
+        540.0,
+        695.0,
+        640.0,
+        944.0
+      ],
+      [
+        1145.0,
+        631.0,
+        1257.0,
+        871.0
+      ],
+      [
+        1128.0,
+        645.0,
+        1239.0,
+        903.0
+      ],
+      [
+        841.0,
+        410.0,
+        952.0,
+        624.0
+      ],
+      [
+        1012.0,
+        458.0,
+        1097.0,
+        712.0
+      ],
+      [
+        865.0,
+        604.0,
+        995.0,
+        843.0
+      ],
+      [
+        891.0,
+        648.0,
+        972.0,
+        868.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "07fa7e440b86c2efc6702e96d31494f6e61b22b69db3da499c90946cef7b2a86",
+      "thermal": "ab3f92987a0713d7a40f2d63244ee80e1ab2692507119e3c74c2e4539753db3b",
+      "annotation": "a77998b2c36710f41a8e3c40926497b90307faf159fb13d0e497c2a2c0cfe2de"
+    }
+  },
+  {
+    "id": "100430",
+    "split": "train",
+    "scene": "10",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\100430.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\100430.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\100430.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        418.0,
+        746.0,
+        554.0,
+        989.0
+      ],
+      [
+        588.0,
+        730.0,
+        740.0,
+        958.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "01de958bc525fad746c11727b58e7994ddd05d5d0f5b7b37e1387c5260c892da",
+      "thermal": "30c26cdee4c9425a18bffb3e940db43bb9b6fcde730c868fd2ac58d87fb0bc14",
+      "annotation": "4f58d7aeff9a1875a6ba18116a4eacf253013406ec58b420650b23c001163fa5"
+    }
+  },
+  {
+    "id": "080482",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\080482.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\080482.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\080482.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1001.0,
+        114.0,
+        1105.0,
+        383.0
+      ],
+      [
+        473.0,
+        527.0,
+        611.0,
+        758.0
+      ],
+      [
+        845.0,
+        704.0,
+        1008.0,
+        931.0
+      ],
+      [
+        932.0,
+        600.0,
+        1099.0,
+        833.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "d3279cc267e38f25369da0e83743ccf917a1bb6e0024d5820336627f796e7887",
+      "thermal": "15f83157f5a41f56a53b8bdf307e810b7e2f1fee7bd07660d63a9516992a510f",
+      "annotation": "d5fc8f2dfcf992e1364ab3e147124f1712d27bf61e0589fc8e30c3820c01edad"
+    }
+  },
+  {
+    "id": "040350",
+    "split": "train",
+    "scene": "04",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\040350.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\040350.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\040350.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        968.0,
+        259.0,
+        1081.0,
+        503.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "3fd25bd2ead926024600cf9b53244cb85e7deb1dfcad4468a88a2a2b6c4ea592",
+      "thermal": "001b32b5f207b9ceb9bed8097fa01d1684d8e7d95c0c6eba16308616208cca47",
+      "annotation": "59f039dd0c2273ab04466b668af25914c302f49b59f63b64abd0dcec06235d99"
+    }
+  },
+  {
+    "id": "140167",
+    "split": "train",
+    "scene": "14",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\140167.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\140167.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\140167.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        857.0,
+        260.0,
+        932.0,
+        460.0
+      ],
+      [
+        1122.0,
+        191.0,
+        1206.0,
+        441.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "379ebf70eb0fd5adad74cc792a3ef17d5be6249f95a9bfeb1f18aaef65a237d7",
+      "thermal": "3ee28dbadb8cefcf76af2f9defa174158b43d6570fe41c41f9fa6695475b92ab",
+      "annotation": "cad9461df5eb682b0a83481467fdbba2ac30f3d44f62c417722c7cab68cde8ba"
+    }
+  },
+  {
+    "id": "080066",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\080066.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\080066.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\080066.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        754.0,
+        61.0,
+        839.0,
+        292.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "2be096892e84fd54514ae0c4048cf0704ad5009c6aa3f1f225967e44746d39bb",
+      "thermal": "64e309eb6ff883d43addd8451c197a9d2eeb4b9d267a52ddcc7336891ee3229a",
+      "annotation": "fe7bb81e14e88cd0d6bef8721503dbc1df7e4bd0cebe57f7dfbddfc722487c05"
+    }
+  },
+  {
+    "id": "080641",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\080641.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\080641.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\080641.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        912.0,
+        125.0,
+        989.0,
+        370.0
+      ],
+      [
+        963.0,
+        107.0,
+        1062.0,
+        333.0
+      ],
+      [
+        945.0,
+        42.0,
+        1017.0,
+        266.0
+      ],
+      [
+        1072.0,
+        190.0,
+        1184.0,
+        411.0
+      ],
+      [
+        1110.0,
+        117.0,
+        1191.0,
+        351.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "fd6a9e0a2a7babbbbe3c771c50c7446b95de8d8d2af67ec536c6b96621349590",
+      "thermal": "08e8f045c6f09fe41727c3da4afb7e98dcb4033ffd4410aaf9379b4e7da2e34b",
+      "annotation": "a0cbd333eed2bd9e6fee74224becf906d0ba980694ab252caa666c35a7004d85"
+    }
+  },
+  {
+    "id": "130178",
+    "split": "train",
+    "scene": "13",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\130178.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\130178.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\130178.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        299.0,
+        543.0,
+        378.0,
+        750.0
+      ],
+      [
+        494.0,
+        577.0,
+        596.0,
+        816.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "090a6cf1bbafd6e97cb8efd09559d81dd26150e21b53f8bf11507bd732b7467c",
+      "thermal": "98611da76d015dae0c2ac9ad2787bb38d5deab90e3c9d121f248507b2bb88a46",
+      "annotation": "78bce010b363af202e7a1350f50b6bb7da91084f68a03f0cd4ecb44ce455f847"
+    }
+  },
+  {
+    "id": "090939",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090939.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090939.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090939.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        768.0,
+        133.0,
+        873.0,
+        367.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "8c63b406e3d7347024e090f4e8d88966fc5b910250193012ef6ea36fe884a90c",
+      "thermal": "634293d8be83b61b01f87e93de25a7f43ffe2f57178de4548575e3dfeb3966c9",
+      "annotation": "ec157b74dea4121dbfeb93fc5f4028be911a58bf7e86576ad887452c8510afac"
+    }
+  },
+  {
+    "id": "020356",
+    "split": "train",
+    "scene": "02",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\020356.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\020356.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\020356.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        178.0,
+        447.0,
+        305.0,
+        700.0
+      ],
+      [
+        309.0,
+        422.0,
+        466.0,
+        654.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "9b369e69ecdd98f8d2369645c7f52c6c38f5fee24e4ea2eda6552c632d6bc153",
+      "thermal": "af5b759e101731188c5ac620b70486e5e37f5f1f0e83ae783085843478245116",
+      "annotation": "88fdf21bd3fab8fd029eb2223a9ff982239d050173a4ec87259d270d9b0f3bec"
+    }
+  },
+  {
+    "id": "080949",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\080949.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\080949.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\080949.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        669.0,
+        908.0,
+        814.0,
+        1024.0
+      ],
+      [
+        1182.0,
+        701.0,
+        1280.0,
+        950.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "ffae11128f7fd1026299ee383785cc063baf11aa3d4ad03c557b5a198086fc95",
+      "thermal": "83f0818b84a9e1067fb51cbd03f14d3bf89d10f0f1f27ec53ff28d28ce7a93bd",
+      "annotation": "c9738396146503c1f0c35ea223c8f896ffed2be32ab6090f9ce5b1a10b55d103"
+    }
+  },
+  {
+    "id": "020456",
+    "split": "train",
+    "scene": "02",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\020456.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\020456.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\020456.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        750.0,
+        128.0,
+        827.0,
+        345.0
+      ],
+      [
+        676.0,
+        567.0,
+        761.0,
+        826.0
+      ],
+      [
+        726.0,
+        520.0,
+        835.0,
+        794.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "bbccbb33eb05a3d9830c4ac50c4b0d0e62d36ff38b22d5d6259eeb1d57779a45",
+      "thermal": "6b2cfd29474509e0f1570c272b1412083895715a6d9792c66fc53107b77c0259",
+      "annotation": "db3ffb60fd76d83005ab90965e57906bb6f6fc8d90bbcbe7eb5c299e3840d470"
+    }
+  },
+  {
+    "id": "081085",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\081085.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\081085.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\081085.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        185.0,
+        331.0,
+        320.0,
+        523.0
+      ],
+      [
+        388.0,
+        598.0,
+        533.0,
+        878.0
+      ],
+      [
+        570.0,
+        431.0,
+        727.0,
+        652.0
+      ],
+      [
+        853.0,
+        581.0,
+        1002.0,
+        786.0
+      ],
+      [
+        985.0,
+        498.0,
+        1103.0,
+        712.0
+      ],
+      [
+        743.0,
+        664.0,
+        862.0,
+        973.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "fcd6c683848669ed04188dc5d025867dbe5f7c50e96f45660719293b266b5d07",
+      "thermal": "11c993af876399e7958aabd0227de32fa8f9248b5f8a3a0dd3972602d970507e",
+      "annotation": "cc56c5fc54dd9bc8fd2bd6fa2797a11936983af77b5d9cec6f564503e9427a92"
+    }
+  },
+  {
+    "id": "070172",
+    "split": "train",
+    "scene": "07",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\070172.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\070172.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\070172.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1018.0,
+        353.0,
+        1120.0,
+        555.0
+      ],
+      [
+        1194.0,
+        355.0,
+        1280.0,
+        542.0
+      ],
+      [
+        1227.0,
+        286.0,
+        1280.0,
+        381.0
+      ],
+      [
+        673.0,
+        242.0,
+        759.0,
+        460.0
+      ],
+      [
+        407.0,
+        443.0,
+        490.0,
+        685.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "d992ebad822d7cf5193e326120617e9fcec21bad8297f4fd2e351d0409394622",
+      "thermal": "ba0fcc6b8e4e638a0cd7ad91714313e521ddfd4a7dcddc5b5a1b62ad0f3065e4",
+      "annotation": "d24e02a2894f2d9f4d4e8f083aa1e5880a45cade47f689b4df3e5964c8f9e4b0"
+    }
+  },
+  {
+    "id": "150381",
+    "split": "train",
+    "scene": "15",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\150381.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\150381.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\150381.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        155.0,
+        209.0,
+        304.0,
+        503.0
+      ],
+      [
+        714.0,
+        783.0,
+        880.0,
+        1024.0
+      ],
+      [
+        823.0,
+        765.0,
+        928.0,
+        1024.0
+      ],
+      [
+        1138.0,
+        0,
+        1261.0,
+        261.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "5e15bfa0ad3355505d68831f40dc202d084d100b197a85f4c77ff6a2b6b81333",
+      "thermal": "f179a6c657d76dc1ff1bf2b4c4e92668464b55dc96afc9275e76ae1e9c161ace",
+      "annotation": "0abc5d33074565b95326d60bb0c431f93a5871ce2ad7fb66dd35008807d31d42"
+    }
+  },
+  {
+    "id": "140147",
+    "split": "train",
+    "scene": "14",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\140147.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\140147.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\140147.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1035.0,
+        661.0,
+        1188.0,
+        886.0
+      ],
+      [
+        1055.0,
+        720.0,
+        1128.0,
+        795.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "b7c64d5b022edbb3de78104ec54f5f447b502867c14e4e59df116d1eca4a9803",
+      "thermal": "59f258e305ec93f4e036d5822393c7e815e8304661816c772146ad571675402e",
+      "annotation": "ee769e7c3ff9f0ee589f156b4f04291383bc9c22c23db35b974dec55c4d61d55"
+    }
+  },
+  {
+    "id": "130279",
+    "split": "train",
+    "scene": "13",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\130279.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\130279.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\130279.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        492.0,
+        516.0,
+        591.0,
+        709.0
+      ],
+      [
+        1007.0,
+        343.0,
+        1095.0,
+        546.0
+      ],
+      [
+        1103.0,
+        341.0,
+        1190.0,
+        555.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "4615a754ff284f8047065a149fb644a717bc40deb206cd301b5701d1a505a06d",
+      "thermal": "a50e1d1d09024cfa386f7fbdef0cbf976d7de03529e8f71ea154bb9c951aae80",
+      "annotation": "61fd1fd79651ef551a499282a71d5b441131c024f74f05d892a53d9250b0c430"
+    }
+  },
+  {
+    "id": "140113",
+    "split": "train",
+    "scene": "14",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\140113.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\140113.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\140113.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        579.0,
+        424.0,
+        670.0,
+        643.0
+      ],
+      [
+        1087.0,
+        169.0,
+        1195.0,
+        423.0
+      ],
+      [
+        1127.0,
+        193.0,
+        1210.0,
+        436.0
+      ],
+      [
+        1119.0,
+        655.0,
+        1247.0,
+        884.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "32f8e31a3cdf4f81fb7f15789b2949949458fbe9077a9651834eaf85c148cf18",
+      "thermal": "db8bfc8f8c8feec4b47599988a77489b1d751642a2034a5faf50d611d491f7f3",
+      "annotation": "b602e892816ec9103b328b6108870e822130a14c481ec178740f3db919051334"
+    }
+  },
+  {
+    "id": "050079",
+    "split": "train",
+    "scene": "05",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\050079.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\050079.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\050079.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        268.0,
+        150.0,
+        403.0,
+        388.0
+      ],
+      [
+        410.0,
+        47.0,
+        515.0,
+        304.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "5afcd71ee98c8763009c85c7dac04ed4b4156ad62c6ddcb83cc363fe51555e4a",
+      "thermal": "21521dd7da05d13536e39a647bedfcbf7434b6b0cf7ba1934eda39b7b54ff0a8",
+      "annotation": "c3a2146edbf86aae62876f92fd5349811dc558cb2e244c68c2e28215f5810ccd"
+    }
+  },
+  {
+    "id": "080667",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\080667.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\080667.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\080667.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        976.0,
+        117.0,
+        1061.0,
+        344.0
+      ],
+      [
+        1039.0,
+        86.0,
+        1115.0,
+        325.0
+      ],
+      [
+        741.0,
+        0,
+        824.0,
+        237.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "d0ccb34189e429e0bc3be39fdb9e25f9bce95d7df8fac3726971a65f6e8d4386",
+      "thermal": "2d9479d0fc99a5ce2ff80e81044dbcbf36b4f0d8af829c68d0bbcc703287dfe7",
+      "annotation": "8b428b321b394205dee37c921f47130c6eff535b257722ee22e25574f503d3e4"
+    }
+  },
+  {
+    "id": "090084",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090084.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090084.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090084.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        133.0,
+        685.0,
+        200.0,
+        928.0
+      ],
+      [
+        180.0,
+        710.0,
+        275.0,
+        945.0
+      ],
+      [
+        829.0,
+        879.0,
+        920.0,
+        1024.0
+      ],
+      [
+        1159.0,
+        629.0,
+        1272.0,
+        818.0
+      ],
+      [
+        108.0,
+        16.0,
+        197.0,
+        231.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "8d6a4bc734f6a1bac476d78b8b78f8d341c2d788d1e4c9c6e4ca53c89452628a",
+      "thermal": "af30c0b0c8252f1b2f758aba2f9116b6c39933e584bd7a706c18e918fbf6c3bb",
+      "annotation": "a0ebbf7477c265045b43731b4dcc82e62e2acc11d43e81d8c8cc4ac56490c5c6"
+    }
+  },
+  {
+    "id": "090743",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090743.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090743.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090743.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        303.0,
+        731.0,
+        463.0,
+        960.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "8d02d92cbcf7eae7c143d98dafc80ab8ab33c418e8d5352b2e44cb80480b58eb",
+      "thermal": "6ec9e834f721f32731112a6d2ac273c9c0b5fa07373776d357fb229df7429586",
+      "annotation": "4e128c47c9ff651ca17c94dfb541f44aebb4d5bca99ebd5bc5a9562abf9da230"
+    }
+  },
+  {
+    "id": "090269",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090269.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090269.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090269.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        0,
+        654.0,
+        47.0,
+        915.0
+      ],
+      [
+        44.0,
+        594.0,
+        131.0,
+        907.0
+      ],
+      [
+        178.0,
+        607.0,
+        278.0,
+        892.0
+      ],
+      [
+        318.0,
+        713.0,
+        404.0,
+        979.0
+      ],
+      [
+        410.0,
+        743.0,
+        487.0,
+        1017.0
+      ],
+      [
+        508.0,
+        770.0,
+        663.0,
+        996.0
+      ],
+      [
+        837.0,
+        923.0,
+        948.0,
+        1024.0
+      ],
+      [
+        1132.0,
+        480.0,
+        1248.0,
+        751.0
+      ],
+      [
+        1076.0,
+        258.0,
+        1240.0,
+        486.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "1d5c11065e0d56732f47fb6e0a08cc4d6deae479418fa87f022db2fbac30559c",
+      "thermal": "4ce6bd214268dbcb2ac91517c5308b3f821d7d05b733bd0a176b66d198b30f9d",
+      "annotation": "a1fe019792feb031920b4bad97879974d1b0d83b26eef5f9c586740e12b2fad3"
+    }
+  },
+  {
+    "id": "060327",
+    "split": "train",
+    "scene": "06",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\060327.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\060327.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\060327.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        679.0,
+        619.0,
+        752.0,
+        847.0
+      ],
+      [
+        713.0,
+        569.0,
+        799.0,
+        794.0
+      ],
+      [
+        758.0,
+        553.0,
+        845.0,
+        780.0
+      ],
+      [
+        1095.0,
+        459.0,
+        1199.0,
+        634.0
+      ],
+      [
+        1190.0,
+        647.0,
+        1280.0,
+        811.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "bd1d47f077e2555047cf591b0ecbd6a8889efd0b0f64f1cfca6c613d823c6670",
+      "thermal": "5d223bf7b1d14f65e30ab33a1ece7735663dd2850d3ae9008b4f76298ed9e1ef",
+      "annotation": "56aa763db70f6b779aed1c348cce8add3b3911031f57817022c5f5b4e943a112"
+    }
+  },
+  {
+    "id": "090485",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090485.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090485.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090485.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        189.0,
+        601.0,
+        282.0,
+        815.0
+      ],
+      [
+        949.0,
+        232.0,
+        1029.0,
+        438.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "6e8927cdfe0b6a4132dcd1d5f44d19b34e1e56961048b56617e50c6937d197de",
+      "thermal": "a0f2b6a7463083516c76776a7bed9377cf5407cf041060634e28758189b2e507",
+      "annotation": "c0f78a9e4f8ab38eeee0fb5be2e86f9a9ae9a454db43eca99b1f969cde2b3fcd"
+    }
+  },
+  {
+    "id": "030446",
+    "split": "train",
+    "scene": "03",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\030446.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\030446.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\030446.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        148.0,
+        115.0,
+        228.0,
+        298.0
+      ],
+      [
+        153.0,
+        52.0,
+        256.0,
+        170.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "d6bb2f527125e4fcbddff8f0a2906c36d86f0d6da91fa73773d033c638f8ed01",
+      "thermal": "af7995ae80ea26989d475db19e6c627d1b4d2d4d05fa0f6970b9bb331143ca39",
+      "annotation": "e1099f1ab1f2dc95f857e1f6ce752e456d27bb1a87fef93acd07f58d0815dd45"
+    }
+  },
+  {
+    "id": "140464",
+    "split": "train",
+    "scene": "14",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\140464.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\140464.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\140464.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        412.0,
+        386.0,
+        503.0,
+        626.0
+      ],
+      [
+        336.0,
+        348.0,
+        454.0,
+        602.0
+      ],
+      [
+        550.0,
+        213.0,
+        640.0,
+        462.0
+      ],
+      [
+        624.0,
+        235.0,
+        759.0,
+        478.0
+      ],
+      [
+        614.0,
+        669.0,
+        769.0,
+        973.0
+      ],
+      [
+        1153.0,
+        553.0,
+        1280.0,
+        803.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "1e937dfbb62ab1adbf3c7a8bb34f481a1bd08569cfd0bbd97a6dc97eec241bba",
+      "thermal": "fae79f3d142364dff157270b637a8ddd68cbfc6c50c5ed9fee46da8f9b4376d5",
+      "annotation": "4c4edbe0976c0561db69788565a1c2c3072047661389c8943bceec4fe90fc970"
+    }
+  },
+  {
+    "id": "140520",
+    "split": "train",
+    "scene": "14",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\140520.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\140520.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\140520.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        568.0,
+        321.0,
+        680.0,
+        577.0
+      ],
+      [
+        190.0,
+        328.0,
+        252.0,
+        560.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "b0d9036341b821f8871c8510dad17268ae45f0106e6a58261e2fd1b8eb158552",
+      "thermal": "37b3aef12e7897a181b3d181b3835bbe724dfcdc9a5e7b43768bade9c1c0b083",
+      "annotation": "98bf2f682fcf46e19e94f59046cc235be459ed988d3c48784797e05272c2e438"
+    }
+  },
+  {
+    "id": "081037",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\081037.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\081037.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\081037.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        359.0,
+        44.0,
+        464.0,
+        279.0
+      ],
+      [
+        412.0,
+        464.0,
+        542.0,
+        668.0
+      ],
+      [
+        968.0,
+        113.0,
+        1053.0,
+        374.0
+      ],
+      [
+        1015.0,
+        200.0,
+        1107.0,
+        449.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "451c1001d9f8e1013bbc08e0ef587de5585985b488390ff1a827b92a9073fbd7",
+      "thermal": "f16145c15df0b95dd69368918e49c2ed52ec4c7fb76876a2aa77636243cb1964",
+      "annotation": "45bc76c4c51e4876a5366b5427f14f682fdaf208a3ad5871002dbd72243b9625"
+    }
+  },
+  {
+    "id": "090535",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090535.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090535.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090535.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1106.0,
+        176.0,
+        1221.0,
+        410.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "27ec1147cff22df6cd9b04c86d391b08cf87dbd51be4f0752ec19e604e0704a5",
+      "thermal": "4a0ab45ee236976847313988e31c06ebc3120ab5e761b205935fff57956647dd",
+      "annotation": "150c2534879046b626e33cff76287a5c462a21b46999b65a01bce81f7188deb1"
+    }
+  },
+  {
+    "id": "010160",
+    "split": "train",
+    "scene": "01",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\010160.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\010160.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\010160.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        780.0,
+        515.0,
+        840.0,
+        760.0
+      ],
+      [
+        796.0,
+        541.0,
+        906.0,
+        813.0
+      ],
+      [
+        859.0,
+        490.0,
+        978.0,
+        738.0
+      ],
+      [
+        77.0,
+        812.0,
+        188.0,
+        1000.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "1104036e7ddf87e0adf39b7db14e02ce5581839e327427c5d6b3d790869ebe7c",
+      "thermal": "cf3bf218b237db9bb8352474abdc7d5fc5dac4459d31d07abd2e43434423e7fc",
+      "annotation": "aa177c2ef7b3829a152b6d2af0c26f30481bee69ad17dcc20b3dd0108d1d53b8"
+    }
+  },
+  {
+    "id": "020233",
+    "split": "train",
+    "scene": "02",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\020233.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\020233.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\020233.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        740.0,
+        646.0,
+        828.0,
+        898.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "12f1f156a9e0fee47fc3d25e31701bec50852f835ca44125c683c64f7cb356d4",
+      "thermal": "d149da1748c4443a87788dbc0e36e66b00f3c4245969e0761533a71b5eeab786",
+      "annotation": "9b808d36fc39afab2935c74b6204e2125d20517ba307065d133e9d43d8e2be62"
+    }
+  },
+  {
+    "id": "090746",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090746.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090746.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090746.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        353.0,
+        77.0,
+        495.0,
+        284.0
+      ],
+      [
+        719.0,
+        782.0,
+        908.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "b6f79ce9f262428c5590b2f35be0b1398a45891931ee4b41d481dece38ee9820",
+      "thermal": "683cca93864d58760a1d344bd8d5e956f1ab124590db48ab45effac37d25aeb2",
+      "annotation": "183bc6a902cbb3cd041be44dd6c1ebded595a3446ea0af4ab1ee5059635862f8"
+    }
+  },
+  {
+    "id": "010316",
+    "split": "train",
+    "scene": "01",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\010316.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\010316.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\010316.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        170.0,
+        228.0,
+        250.0,
+        471.0
+      ],
+      [
+        424.0,
+        363.0,
+        539.0,
+        611.0
+      ],
+      [
+        1112.0,
+        329.0,
+        1239.0,
+        547.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "a7c00cce72ecbd78b2449dc907d5501f0da7dd8029e9291626fa9136835261de",
+      "thermal": "321c177777a3a6d24ce09ab33a6a39058fe0ae4ffc2d89562a78e40b4ebb0d0f",
+      "annotation": "7f1530a6bf7e01aac99486a866da7cb5ccddf469f65b6b034697dc935e80c1e8"
+    }
+  },
+  {
+    "id": "110131",
+    "split": "train",
+    "scene": "11",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\110131.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\110131.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\110131.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        549.0,
+        832.0,
+        597.0,
+        1024.0
+      ],
+      [
+        204.0,
+        778.0,
+        278.0,
+        980.0
+      ],
+      [
+        415.0,
+        640.0,
+        490.0,
+        803.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "41c609e3d0c802b3b61cb501c23f6044ae84c3a68ddc9aeb0e8f86e656afd22e",
+      "thermal": "a6fe9964ce8bcdb4792e0b0fe260d4f5120d31af21b9f4bc03c8330306f05a26",
+      "annotation": "4f2e202c33eccaae9b6e5ca9fc459a6513dbb1dfdc85a1ce83ffc929cdeeade6"
+    }
+  },
+  {
+    "id": "081036",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\081036.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\081036.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\081036.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1038.0,
+        81.0,
+        1113.0,
+        298.0
+      ],
+      [
+        962.0,
+        631.0,
+        1071.0,
+        850.0
+      ],
+      [
+        1097.0,
+        98.0,
+        1155.0,
+        286.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "385693c4433c875a0a16f82e0cbc1582711836a6596cbaeb440d5d0ce803494d",
+      "thermal": "c7272bead06f2134d70cf4f52944dde4a68648038911c5480995524a935863b0",
+      "annotation": "4da84e192ad902e1ac4c68688eb752a65e4289ca738deb3a916f71f00f3ef9cc"
+    }
+  },
+  {
+    "id": "110245",
+    "split": "train",
+    "scene": "11",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\110245.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\110245.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\110245.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        79.0,
+        881.0,
+        163.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "5209be26332d5f93d07f8c104e42149ec075406ee37001b865f59384cbfcba38",
+      "thermal": "a6b11ec59990f03190eebc1765cd3d2ba4c07eb247e2a01d8990d0a5f7e968cf",
+      "annotation": "057a163b692addfd9dbee952b343d173cab06743b07b834df691151ba70f8c2d"
+    }
+  },
+  {
+    "id": "250256",
+    "split": "train",
+    "scene": "25",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\250256.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\250256.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\250256.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        710.0,
+        325.0,
+        824.0,
+        574.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "155f7101e5c2eb808702846cf8953b5e341e7b66536867a6ba69a212ad6aafce",
+      "thermal": "5ee72049093b704875315d499f9fc5682aa16abf75c6d94425235fa28dff394d",
+      "annotation": "d8a2677f0db7b97d706798a3f0252e0e721517ac8157b2117769015233b35cb6"
+    }
+  },
+  {
+    "id": "020288",
+    "split": "train",
+    "scene": "02",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\020288.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\020288.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\020288.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        542.0,
+        675.0,
+        622.0,
+        933.0
+      ],
+      [
+        592.0,
+        632.0,
+        705.0,
+        901.0
+      ],
+      [
+        864.0,
+        397.0,
+        955.0,
+        644.0
+      ],
+      [
+        1051.0,
+        531.0,
+        1138.0,
+        825.0
+      ],
+      [
+        943.0,
+        4.0,
+        1029.0,
+        178.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "98b32519ed18855a4e63073423b4e51587b563075859b1f451ee51a57dff1fc1",
+      "thermal": "34431e755d888193add2a216ac73c36bed8268a8baff3b343b7adc2370cabac3",
+      "annotation": "c6c9866a4b688e5dbb7bc1bd90d6136ce8b385e0b246675924bb0cb2203d182c"
+    }
+  },
+  {
+    "id": "070264",
+    "split": "train",
+    "scene": "07",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\070264.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\070264.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\070264.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        340.0,
+        466.0,
+        439.0,
+        727.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "628b7d392ee3c82fbbc4011fe5525cb2d534ef781a93c1cd63b7bb5287d2d83d",
+      "thermal": "bb87e429fc9ca53431753692a58e22b6dbce31e715b936768b56e951be4f8fb8",
+      "annotation": "14abf0ea5adcd87c987d6a769a35f50a4e446b9f2a3c017c7bb8601319df61a2"
+    }
+  },
+  {
+    "id": "090120",
+    "split": "train",
+    "scene": "09",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\090120.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\090120.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\090120.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        356.0,
+        477.0,
+        486.0,
+        684.0
+      ],
+      [
+        0,
+        460.0,
+        57.0,
+        673.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "8319a81f958be9ae5cccaedc487727cc84d34594ec321e8bc00fd32f45adbb64",
+      "thermal": "14fd88791e4169e07bc79d574ee7b8ccd1b734d590880bc02038e2c37657d9c5",
+      "annotation": "c9e02433866aa92c610b3a9d3bf711c41e4a8862346b6a5463f7950155799630"
+    }
+  },
+  {
+    "id": "080798",
+    "split": "train",
+    "scene": "08",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\080798.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\080798.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\080798.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        194.0,
+        37.0,
+        297.0,
+        251.0
+      ],
+      [
+        1098.0,
+        667.0,
+        1207.0,
+        849.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "a80e2ac27f2b096b0cbde6b61ff40d36b3b0ee0defda3125d4e841dfc3d170b5",
+      "thermal": "39094e390be334d8f56d264dd91cea4671ed8d166f3b210d6a69b23754fef7e3",
+      "annotation": "572552e6b597079e0948c697cf479f31049f40050d524fc39834dd1ea1853518"
+    }
+  },
+  {
+    "id": "030133",
+    "split": "train",
+    "scene": "03",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\030133.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\030133.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\030133.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        440.0,
+        43.0,
+        520.0,
+        256.0
+      ],
+      [
+        214.0,
+        57.0,
+        341.0,
+        289.0
+      ],
+      [
+        195.0,
+        317.0,
+        302.0,
+        382.0
+      ],
+      [
+        180.0,
+        313.0,
+        325.0,
+        562.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "c8f96c24956be4c76b9664565eea718f9e86379c6555733c76b9a418fbf7cf39",
+      "thermal": "5817de2ef5ef58d1faf61a868df5a60c1e9117ce52cdbdb2bc446cf56538996d",
+      "annotation": "76e7d60ee80633c926ed9149181cf2d9cf475ceaad79943c86b8c3919fc32df6"
+    }
+  },
+  {
+    "id": "110433",
+    "split": "train",
+    "scene": "11",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\110433.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\110433.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\110433.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        431.0,
+        695.0,
+        501.0,
+        878.0
+      ],
+      [
+        845.0,
+        783.0,
+        919.0,
+        850.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "e6ab55def5dbb932a8defa1cbf64e2265db9747d2680773db5a46ce119606495",
+      "thermal": "3647bce00d9d7aa6e72d789e937722300be51a09bb58de26118ae851f3611e60",
+      "annotation": "b14dd3b870b01403d9990ad3fff8589843da1d7cd6b5d37b39ff08a0a1e7023e"
+    }
+  },
+  {
+    "id": "010340",
+    "split": "train",
+    "scene": "01",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\010340.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\010340.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\010340.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        379.0,
+        558.0,
+        458.0,
+        734.0
+      ],
+      [
+        445.0,
+        538.0,
+        527.0,
+        796.0
+      ],
+      [
+        813.0,
+        546.0,
+        900.0,
+        737.0
+      ],
+      [
+        862.0,
+        917.0,
+        1018.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "811dfaf57a9979b3b6cdd09384f36f68538950e1cca9015cfecb9e0c0c2ebb08",
+      "thermal": "66b7e02e24105476e77f767c47f1b1bcdc6c264a202b0ce6ee9c1a07f4d90407",
+      "annotation": "c211e64fd3c05b52b5b0adc0b94e629be1ea29c1380f88f2fa0cd0a79840e5a2"
+    }
+  },
+  {
+    "id": "250059",
+    "split": "train",
+    "scene": "25",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\250059.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\250059.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\250059.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        689.0,
+        449.0,
+        753.0,
+        629.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "aecb25707c889d37de9e5337c211c42bd5f74b312103601b15eef3e353f19844",
+      "thermal": "62da2262331d526b378fb3039ba8f6295044d89907a8d6f0fa9c5ac110029506",
+      "annotation": "b80fe3e4047c18ec33e0494ca8939946190c3253904acfcc779f6096db5dd7c7"
+    }
+  },
+  {
+    "id": "140288",
+    "split": "train",
+    "scene": "14",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\140288.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\140288.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\140288.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        276.0,
+        522.0,
+        389.0,
+        717.0
+      ],
+      [
+        933.0,
+        142.0,
+        1013.0,
+        381.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "bf0fd630bc401268e52a9800bf782d96a3c35911ff5be44236b05f8247f7883d",
+      "thermal": "f9966d030d0bb3274eea23d384ceeef7599d71b1e4e14bdac1bc7c68cc02db4b",
+      "annotation": "53d647b5dd084c8c5b04ddef1cf242e3225f63517deed331db036d6c59fa49d3"
+    }
+  },
+  {
+    "id": "170509",
+    "split": "validation",
+    "scene": "17",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\170509.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\170509.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\170509.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        769.0,
+        607.0,
+        866.0,
+        832.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "7ee41876cdadc78d1b0b4ac4a49e5862af7bb102ea0670f0ff8ea37d70a262c0",
+      "thermal": "57b72b063cb045ebc107d27b67f5ed741728613f74079c90389eadf593fdff2f",
+      "annotation": "781cdeacae42ce3f61356a7b46b019b2e501810b93c7d5b7b0fa06a0ff921fbd"
+    }
+  },
+  {
+    "id": "180328",
+    "split": "validation",
+    "scene": "18",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\180328.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\180328.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\180328.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        130.0,
+        72.0,
+        225.0,
+        334.0
+      ],
+      [
+        229.0,
+        171.0,
+        348.0,
+        412.0
+      ],
+      [
+        510.0,
+        161.0,
+        596.0,
+        368.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "d1a29ee3b585f521c53a99e1b9e9fca9dbc19987799b6bf6d85b9381ed94ff66",
+      "thermal": "f6a8fede4566cda4b2bd8696e6e8f4c901c98a176da9586c8439b6829b28a48f",
+      "annotation": "98aa42c14c8f66fd464e922b7bb00141eab82a5311857f0da9262697433ae17d"
+    }
+  },
+  {
+    "id": "160287",
+    "split": "validation",
+    "scene": "16",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\160287.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\160287.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\160287.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        318.0,
+        803.0,
+        407.0,
+        1024.0
+      ],
+      [
+        1133.0,
+        606.0,
+        1203.0,
+        845.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "2ad5744ff4c41e638c1e11e341e572fa224d5c1ef710e01fc6a5ec78ac54f5cc",
+      "thermal": "17aca3822f9f2cffdbb658e96813b6a84dfc2345ebbe14bf11f53d8dc2590c57",
+      "annotation": "b020580149dfc970e2833145e3972ac649fac92017eafb59f5f5a2ada0f732e7"
+    }
+  },
+  {
+    "id": "170259",
+    "split": "validation",
+    "scene": "17",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\170259.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\170259.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\170259.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        339.0,
+        757.0,
+        407.0,
+        945.0
+      ],
+      [
+        276.0,
+        772.0,
+        343.0,
+        927.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "e7e103867f357233321fca90a9367346ba847264474994c9b60a98224c67fd3b",
+      "thermal": "a74097c4c700f5df0cb5d7f6afca759674a0649243de0f9879fb704edb51c6f4",
+      "annotation": "9ab5b9ee454023c2981c9de1121b31ec1c31008c24a4060f0d8b4976c55675b7"
+    }
+  },
+  {
+    "id": "170427",
+    "split": "validation",
+    "scene": "17",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\170427.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\170427.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\170427.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        427.0,
+        699.0,
+        518.0,
+        940.0
+      ],
+      [
+        619.0,
+        256.0,
+        679.0,
+        370.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "04795960519f0e9cc9c4fefa250c1405ec39ed90ea466f8b1684ed198c6a858b",
+      "thermal": "7d30e5b1cedc7851f812a69fa9fea83c2276e5f0357a3659fae3adc64d32fc6b",
+      "annotation": "f037536616998cb95aa360a317fea8e20d359a1ea6d52084be6ffc812e7867fd"
+    }
+  },
+  {
+    "id": "180131",
+    "split": "validation",
+    "scene": "18",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\180131.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\180131.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\180131.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        608.0,
+        125.0,
+        699.0,
+        334.0
+      ],
+      [
+        57.0,
+        117.0,
+        143.0,
+        350.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "6fcd12999d7adf98799a7b01a84297e32301439a2b6b4b76f8d1e821a8b4a0e6",
+      "thermal": "56f057ce2e042a96cf63394b1a86fd4bf7b60b7515c0014be3359ff9a52ce1cf",
+      "annotation": "2cb091d6b8cac89c43bd8de193253a86547e58e37fb43c66791cd89d79b70dc4"
+    }
+  },
+  {
+    "id": "170235",
+    "split": "validation",
+    "scene": "17",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\170235.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\170235.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\170235.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        604.0,
+        682.0,
+        687.0,
+        930.0
+      ],
+      [
+        478.0,
+        671.0,
+        570.0,
+        900.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "38061a8fa134d0fc903f90f015f702c02322718b1d141abb0105cfc7bf18feaf",
+      "thermal": "b9b63be37ad5a5ed9988ee831102f9892773845e1768718dbc98f09f366d3563",
+      "annotation": "ca09ee9fafe9af3fd61a034f42a9e4b59b7508ccfecc527fac4c5ddeda81e173"
+    }
+  },
+  {
+    "id": "160380",
+    "split": "validation",
+    "scene": "16",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\160380.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\160380.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\160380.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        583.0,
+        741.0,
+        665.0,
+        978.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "93f557dba35c06562a6765b9c943986a96413c2118dbcb83b86c338fd5736be6",
+      "thermal": "4e9a94123563340ca026a0441003805d978b4506e3aa3866c9a89b4606dbf9f4",
+      "annotation": "edc1ba6cb41434c79f75ff0d4677d92586ca3dd2b11bc63d1869e645e15d49e3"
+    }
+  },
+  {
+    "id": "160405",
+    "split": "validation",
+    "scene": "16",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\160405.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\160405.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\160405.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        937.0,
+        681.0,
+        1029.0,
+        910.0
+      ],
+      [
+        596.0,
+        576.0,
+        680.0,
+        686.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "a6447dffc00aa7c902a45c047c6809ae4c9827636dd26264b71acf86d804fe36",
+      "thermal": "3e00cdebde7b09a43853aa8264af8c8670e9c1b7a5ae062d1abead5fd5d0993a",
+      "annotation": "2b4e51b811b42e8f5ad3bde34047ec0b677459859a52dbfdd91cd05eaf91d50a"
+    }
+  },
+  {
+    "id": "160521",
+    "split": "validation",
+    "scene": "16",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\160521.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\160521.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\160521.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        497.0,
+        857.0,
+        674.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "10fc15d0ae0a6f14014a9b2b65145ca53fa3c3e3e781127fcb02efc0c3b60217",
+      "thermal": "b884c3bd7a86c6ebf960dd95e39522ea163c92a6ceec24641faf0a2b4197bc96",
+      "annotation": "6021a1315b00a3e633436aee4d1be6bd0f3fbaaa948865315de0759bdf14f1ca"
+    }
+  },
+  {
+    "id": "160312",
+    "split": "validation",
+    "scene": "16",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\160312.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\160312.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\160312.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        296.0,
+        836.0,
+        381.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "e9e167d8df26c0e9522138944f70064e5620fef422921edd981f58faee994f10",
+      "thermal": "6c69872e900bcc31162adde19f08d19e1674f7f6833cd8bb626c1b1977db7c0d",
+      "annotation": "ae43d73d676e926ef4463737fe43d46343b24425a1e9210a8a4db8cefb424e2c"
+    }
+  },
+  {
+    "id": "180309",
+    "split": "validation",
+    "scene": "18",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\180309.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\180309.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\180309.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        166.0,
+        141.0,
+        257.0,
+        393.0
+      ],
+      [
+        21.0,
+        357.0,
+        125.0,
+        589.0
+      ],
+      [
+        857.0,
+        622.0,
+        966.0,
+        804.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "ccab6b41aa9ba3ef2257ade3ac7da8baa8d5f1d11cd0a26bdcee92bb6f36015a",
+      "thermal": "d28e434125f20cc0930a98b6134c35e5b5f38819c7b07b5be7c9cab5ee767250",
+      "annotation": "ff50930db22c0aaadd13bc1c0b531b736662cc438ed89920bb4c24939d71177a"
+    }
+  },
+  {
+    "id": "160230",
+    "split": "validation",
+    "scene": "16",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\160230.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\160230.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\160230.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        642.0,
+        825.0,
+        738.0,
+        1024.0
+      ],
+      [
+        1114.0,
+        586.0,
+        1187.0,
+        773.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "5fc39f0542fb02c2b6f36ad4b6d016be3212a62e9999ae73e82d3de0d88e43ae",
+      "thermal": "9d00c80629dfab0eb93b8fddffcc7634b7cdfdd7a74753ffc4701c4a9fa9ff2b",
+      "annotation": "e8661573efa418b566f74b5b632d091a02f4e9578a4aac9827d0170acf6892b5"
+    }
+  },
+  {
+    "id": "160441",
+    "split": "validation",
+    "scene": "16",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\160441.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\160441.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\160441.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        595.0,
+        699.0,
+        690.0,
+        920.0
+      ],
+      [
+        617.0,
+        705.0,
+        730.0,
+        937.0
+      ],
+      [
+        634.0,
+        904.0,
+        708.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "190b247694499c76281222302230c187f1d2a4b6d1c1f0f26980283c5ebf2fdc",
+      "thermal": "90fc8884da89800373dba483d2ff4db37411c31b62f351775b11b2a9ab140416",
+      "annotation": "4392d69090e4435714279b6e02c25cb5405ac6caa728718fed732e177e4fc0fa"
+    }
+  },
+  {
+    "id": "160106",
+    "split": "validation",
+    "scene": "16",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\160106.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\160106.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\160106.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        561.0,
+        690.0,
+        634.0,
+        926.0
+      ],
+      [
+        623.0,
+        735.0,
+        692.0,
+        960.0
+      ],
+      [
+        645.0,
+        904.0,
+        717.0,
+        1024.0
+      ],
+      [
+        812.0,
+        724.0,
+        854.0,
+        964.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "756f1638728877cbf9c8532baf8bd3561905e2b1ce79a6c8e6a96b0316d04de7",
+      "thermal": "62dbe2a5ca03c4c5427a5e96c2bc149fa45b03448d8cb3776e1343d5c575a96d",
+      "annotation": "3ae282e5fc0f28ed2656e91c940f55b43fd902c9b9ef659f29045b605d79f0d8"
+    }
+  },
+  {
+    "id": "180022",
+    "split": "validation",
+    "scene": "18",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\180022.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\180022.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\180022.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        68.0,
+        316.0,
+        165.0,
+        529.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "17900900deb12bda05729938da53b796dec465999e314b883f83058224ee19dd",
+      "thermal": "1c40b3add95170b6e61cd832a21bef2328822e30a06fbdff21c896d522f70c2b",
+      "annotation": "c2c89c0436330e26e78fdb13a7f9219f1c8c6651f0037c1e38abf0bdbf700ae0"
+    }
+  },
+  {
+    "id": "170058",
+    "split": "validation",
+    "scene": "17",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\170058.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\170058.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\170058.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        532.0,
+        290.0,
+        604.0,
+        417.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "566eb501617c15a57c608dbc7dce144a4ac090480286639231a9f019acbf4eae",
+      "thermal": "ae121221b89fd2f2cccaf0ab5c7a4d58d26975aecec64051c1854e56e4701b8a",
+      "annotation": "f564e13e00a2d9dd508c14abd0eea6da8d1937bb9466efb28e32a2f4b9fab41d"
+    }
+  },
+  {
+    "id": "170080",
+    "split": "validation",
+    "scene": "17",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\170080.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\170080.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\170080.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        751.0,
+        648.0,
+        823.0,
+        847.0
+      ],
+      [
+        712.0,
+        595.0,
+        772.0,
+        835.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "3c3cbdda4ae990efb6b63a795f95d10b6615a9e7c612079c03a84341a25328f8",
+      "thermal": "6b687ab214fd293cf109a8740f5c31cb08c665b33cf43884a8be9015faf020f3",
+      "annotation": "c3df8dc782df24e4abf871d119c3c2b8aed40946502ecfa0f4035eebcd02c4d5"
+    }
+  },
+  {
+    "id": "170081",
+    "split": "validation",
+    "scene": "17",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\170081.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\170081.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\170081.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        754.0,
+        635.0,
+        859.0,
+        892.0
+      ],
+      [
+        1107.0,
+        536.0,
+        1184.0,
+        742.0
+      ],
+      [
+        438.0,
+        717.0,
+        526.0,
+        919.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "22a6ef0196648c5acf4d30bdae68e0633548191dd23be480cc3299688cf93a4e",
+      "thermal": "d82ac4fe219e71516d8f5106912618795df2e3afb55978b268814bec83266771",
+      "annotation": "4d241eb98fbd0bae62693b71f845e852db18698404d8f5b393a85902c7bfee70"
+    }
+  },
+  {
+    "id": "160105",
+    "split": "validation",
+    "scene": "16",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\train\\160105.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\train\\160105.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\160105.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        286.0,
+        835.0,
+        343.0,
+        955.0
+      ],
+      [
+        316.0,
+        897.0,
+        378.0,
+        1022.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "bb172f8ed4ecc002cbec4c203c91cef7e9d83fa25f766c765eb5ff7aeebc90d2",
+      "thermal": "78a12b3507f73b92c95401435a55a16434f7a95e156b4520b612699dca9a1c40",
+      "annotation": "1d994e1158a7a0b3ec1131bb238fa55bcfbc65bcb08fc6446e1b96fe52a8a85d"
+    }
+  },
+  {
+    "id": "210352",
+    "split": "test",
+    "scene": "21",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\210352.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\210352.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\210352.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        816.0,
+        281.0,
+        902.0,
+        609.0
+      ],
+      [
+        2.0,
+        804.0,
+        36.0,
+        889.0
+      ],
+      [
+        10.0,
+        838.0,
+        117.0,
+        1024.0
+      ],
+      [
+        225.0,
+        912.0,
+        346.0,
+        1024.0
+      ],
+      [
+        278.0,
+        985.0,
+        400.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "4b45f77dee30acf7e66639264ce24831b442dd360623aa4ea112956d4b436f78",
+      "thermal": "443ac29827f290b03bc0d36bf21e1fe5f3d08b2b259e04f1952479eb15224ad8",
+      "annotation": "0e162e4506ccc3f70ef5c5f4a7051248cde2e2437a0ddc2030be5d49689a68c2"
+    }
+  },
+  {
+    "id": "190753",
+    "split": "test",
+    "scene": "19",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\190753.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\190753.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\190753.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        431.0,
+        684.0,
+        527.0,
+        985.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "1d6ec520b398a14fe42a47ebeafd1b32fa5cd5fb81114211551e82096f05c664",
+      "thermal": "e4eb4f681218c61ebe7d6154bc76452b367c1d3e2f1865c67a2f8c7f5482f681",
+      "annotation": "348bf6ee0ed46db61b08a09a44e76873876f9f32a5f93b1af8870d7a20f98f20"
+    }
+  },
+  {
+    "id": "260050",
+    "split": "test",
+    "scene": "26",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\260050.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\260050.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\260050.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        568.0,
+        839.0,
+        656.0,
+        1024.0
+      ],
+      [
+        471.0,
+        868.0,
+        563.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "bb7e3a7400cbfc1b97b958ce5720e333cdf7d2b3338c93672ce88f2c59f97c19",
+      "thermal": "adea5c8978978f99abc081e41cea8c7e8cc32ea847b0249396f7132f45207ec7",
+      "annotation": "0ed70901dd5e79bed8e389446c94ca44ddc66edec22b12a49a48f08dc1c59a2a"
+    }
+  },
+  {
+    "id": "190115",
+    "split": "test",
+    "scene": "19",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\190115.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\190115.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\190115.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        226.0,
+        719.0,
+        345.0,
+        1014.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "4b010382cd29e9562322d5992bed371de72c61486168e05c288ea83710d54543",
+      "thermal": "1b444d5330969003faa1d33996a62e803b982de0664a10aff7f917af3fe66eb8",
+      "annotation": "8a92741e5c206b20ebcf687063a919efb89a6045f55038a4bf8ed67fe6797fed"
+    }
+  },
+  {
+    "id": "210423",
+    "split": "test",
+    "scene": "21",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\210423.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\210423.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\210423.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        158.0,
+        553.0,
+        297.0,
+        800.0
+      ],
+      [
+        243.0,
+        854.0,
+        391.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "cb2a29074e07f2054faa6d5a46e6bb0b5eed28fedcad076eb322aca6f6c242c1",
+      "thermal": "7029dfc8fa02cc1c87c790453d1423158ad088d6f7e15980e174d18e7dd7d1b1",
+      "annotation": "a08ab1356a438978f9d97fc53d6931f5634f5c909c1f36d2ffc677ec47a075d4"
+    }
+  },
+  {
+    "id": "210381",
+    "split": "test",
+    "scene": "21",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\210381.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\210381.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\210381.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        671.0,
+        787.0,
+        798.0,
+        1017.0
+      ],
+      [
+        249.0,
+        824.0,
+        377.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "4a1fb511fa8cf59cf360137abfa16270c975d9dafbfa6c016fdb0fe54fd0da14",
+      "thermal": "86363e5440bc18c0aae8394aa64e33900572545921d6b42e7aeec261fff3da56",
+      "annotation": "5dccbfb3b6457165c1a751125a08dd779d70b72ee35514f081981994327ac515"
+    }
+  },
+  {
+    "id": "200276",
+    "split": "test",
+    "scene": "20",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\200276.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\200276.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\200276.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        764.0,
+        195.0,
+        881.0,
+        529.0
+      ],
+      [
+        1141.0,
+        284.0,
+        1237.0,
+        604.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "ce0051e53c385ae8b2e59bf342bd3c1be2704e31d16132c83743f0ed43c57bff",
+      "thermal": "d452bb79682594064aabcfd37c5c33a9e69b120c221908f36db3351f7a773b21",
+      "annotation": "fe55dde2af7ead7464220e221dede65cf71dee8e55b44d7a96aeb108176af953"
+    }
+  },
+  {
+    "id": "190683",
+    "split": "test",
+    "scene": "19",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\190683.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\190683.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\190683.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        97.0,
+        254.0,
+        207.0,
+        527.0
+      ],
+      [
+        324.0,
+        766.0,
+        435.0,
+        1024.0
+      ],
+      [
+        416.0,
+        754.0,
+        518.0,
+        1024.0
+      ],
+      [
+        837.0,
+        1.0,
+        990.0,
+        234.0
+      ],
+      [
+        790.0,
+        980.0,
+        917.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "40335439c849bafbea02eabd4bbfe61fb85ccd935522d982b25460123c62f777",
+      "thermal": "e8aeec469d7a9035ca3ed76b0d64e08e2d87d224b5dd419d5e98f8e4e812ff10",
+      "annotation": "25c2d3fee31423459bc5aa32bb95b7a0fbc95402928a6445e0e97292c0456132"
+    }
+  },
+  {
+    "id": "240342",
+    "split": "test",
+    "scene": "24",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\240342.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\240342.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\240342.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        288.0,
+        898.0,
+        406.0,
+        1024.0
+      ],
+      [
+        464.0,
+        911.0,
+        569.0,
+        1024.0
+      ],
+      [
+        990.0,
+        532.0,
+        1090.0,
+        713.0
+      ],
+      [
+        1191.0,
+        545.0,
+        1275.0,
+        715.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "2ef4b7020f8c9cce4d129586f4421d428738f0bccfb8181370bded76027a54b4",
+      "thermal": "68c27125183d8d4eb70e82892f8316df908eb43150c87d57e200d30c34470621",
+      "annotation": "200c7f02e1a97cde6dad313abc2610fcfe50887dcae179f71a838cad7144512e"
+    }
+  },
+  {
+    "id": "190046",
+    "split": "test",
+    "scene": "19",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\190046.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\190046.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\190046.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        830.0,
+        100.0,
+        944.0,
+        309.0
+      ],
+      [
+        509.0,
+        626.0,
+        600.0,
+        908.0
+      ],
+      [
+        640.0,
+        1.0,
+        749.0,
+        166.0
+      ],
+      [
+        787.0,
+        950.0,
+        906.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "7102b38e2e9b27a2838061823ae97ecd7800d564413276528fd7cc51c7f85a88",
+      "thermal": "38016a3468864a50d778ffba44a38169cb2124c10aac2cd2c9c7ac1c3b219ee7",
+      "annotation": "c1f7756498c040b3fc17a94594a470ce8e1f4a8008abd2226a8b9af77a350a69"
+    }
+  },
+  {
+    "id": "190791",
+    "split": "test",
+    "scene": "19",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\190791.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\190791.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\190791.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        0,
+        9.0,
+        87.0,
+        267.0
+      ],
+      [
+        331.0,
+        985.0,
+        444.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "c3d68611c44b011df2a8d0e0b2003007837273f290f5e6cb2a24c74b3feda4c1",
+      "thermal": "e17903f62e874f8ccff646107d2a8e8d98f2990e22c1ff4dc4fe83e9f01b0b22",
+      "annotation": "fc0b10b2b971d9d399c78f25c7a934ac9081d9a1ef765037f74dee2df92a6212"
+    }
+  },
+  {
+    "id": "210154",
+    "split": "test",
+    "scene": "21",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\210154.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\210154.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\210154.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1.0,
+        161.0,
+        108.0,
+        425.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "637c64d49bc11dc6314e2b594e080d9037bfceba8b25f0cf3d6ed9b9d6d3aaa1",
+      "thermal": "0f790a66d11b58af02c962058689830733aee2e1a81e91190ac224d3ec37c767",
+      "annotation": "b591918cf255939d21bc36e3ee4292ead3538ff7d363b5feca893a42b8205a0d"
+    }
+  },
+  {
+    "id": "240198",
+    "split": "test",
+    "scene": "24",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\240198.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\240198.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\240198.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        211.0,
+        695.0,
+        288.0,
+        956.0
+      ],
+      [
+        282.0,
+        738.0,
+        354.0,
+        971.0
+      ],
+      [
+        920.0,
+        403.0,
+        1023.0,
+        573.0
+      ],
+      [
+        243.0,
+        461.0,
+        300.0,
+        685.0
+      ],
+      [
+        181.0,
+        473.0,
+        246.0,
+        683.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "1a0dcb73efbca035c57a5bf307f956978c74ec11cb53236bf8cae5f7b3e669ab",
+      "thermal": "8bd8ce7034fc75d73bddfa274d769a9ecd4e01d5d73a13b2716b8cb221e559a8",
+      "annotation": "33dfbacbccc5e562a750db1f18864dc31067b909ebbb3b0119b9b153d0da792a"
+    }
+  },
+  {
+    "id": "240150",
+    "split": "test",
+    "scene": "24",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\240150.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\240150.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\240150.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        395.0,
+        532.0,
+        477.0,
+        789.0
+      ],
+      [
+        322.0,
+        551.0,
+        392.0,
+        779.0
+      ],
+      [
+        234.0,
+        533.0,
+        316.0,
+        748.0
+      ],
+      [
+        128.0,
+        554.0,
+        220.0,
+        771.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "2e65e39b69f1309157d905b1631125325c0729f4ef93de432a8f92cf98f12c02",
+      "thermal": "4f9b2dbd73e522f4df9af57bf35a7d829a96579f4ced4a6d9b05b15e5a2d7c10",
+      "annotation": "eedce718185d14787442f59d6a454d474d43be88b1426f0313c6c80ad3537dc5"
+    }
+  },
+  {
+    "id": "210354",
+    "split": "test",
+    "scene": "21",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\210354.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\210354.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\210354.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        553.0,
+        733.0,
+        651.0,
+        944.0
+      ],
+      [
+        0,
+        281.0,
+        117.0,
+        523.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "58a0bac6795dd97b3c9bbff36d094bc342451e2aa5d6daa6795355595ec7f3b7",
+      "thermal": "b8c3c5fc748d4d0be457ec026e368b0f09861b7bc4cd121ed56cad23c63f185d",
+      "annotation": "9c2775647f108e3ffff42e1ba047cbf5e1bc6586ce13002a78cbcb8fa03e1299"
+    }
+  },
+  {
+    "id": "230261",
+    "split": "test",
+    "scene": "23",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\230261.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\230261.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\230261.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        874.0,
+        148.0,
+        996.0,
+        406.0
+      ],
+      [
+        0,
+        154.0,
+        41.0,
+        428.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "b079a08cd961f4d23f05f168eab49b7946c50a625ffd781661eb34fd85f84592",
+      "thermal": "028e640bf1cf144f1fea66ef4c824d4b90dd3858c2c749add600a2894e61aeb7",
+      "annotation": "048a87aae6b6fbdc12d95bf330dda1c40d33bf71665b457d8ce84c218b4a6f06"
+    }
+  },
+  {
+    "id": "190003",
+    "split": "test",
+    "scene": "19",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\190003.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\190003.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\190003.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        29.0,
+        181.0,
+        130.0,
+        436.0
+      ],
+      [
+        248.0,
+        708.0,
+        362.0,
+        991.0
+      ],
+      [
+        350.0,
+        686.0,
+        454.0,
+        972.0
+      ],
+      [
+        1214.0,
+        498.0,
+        1280.0,
+        761.0
+      ],
+      [
+        685.0,
+        901.0,
+        794.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "9dc65cefafcca45abe4bb1a81a008460dc76ba50f75272c421645f60997da250",
+      "thermal": "dd6784a17bcefad2aa314558c1ac603acbf957797f832535dc16109006e5a661",
+      "annotation": "171d8427efe7e0ccce8ed8e06096adfc2544946cd5f9c2171bf2ed2fd1bee935"
+    }
+  },
+  {
+    "id": "230438",
+    "split": "test",
+    "scene": "23",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\230438.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\230438.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\230438.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        70.0,
+        647.0,
+        236.0,
+        956.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "3cc04e6667011e9318056291b8229b15eb94baf94f7b212732d7df612ec45f96",
+      "thermal": "01dfc2dc5d7c67ae36db9abe78239b4ba9a89029dc5c2a03ff92c0c3ad6e5c03",
+      "annotation": "93df283016ef0393c116b0f3d90bc7a2429a2552014a33e9c6bb2cebff822f8c"
+    }
+  },
+  {
+    "id": "230232",
+    "split": "test",
+    "scene": "23",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\230232.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\230232.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\230232.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        722.0,
+        0,
+        854.0,
+        191.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "014853f6da298e1b3083a84d1d6d29c5952691b5325e086bceed8571b159c245",
+      "thermal": "43181c75142c49fc9b0eaf0f4e8c247f5621f8116904d41d7cc11c73a907a8a8",
+      "annotation": "baa9959008e63695a3aae17e7318dbb66f41370ba36a8cce0fe76d41c07a7825"
+    }
+  },
+  {
+    "id": "240153",
+    "split": "test",
+    "scene": "24",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\240153.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\240153.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\240153.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1030.0,
+        473.0,
+        1147.0,
+        694.0
+      ],
+      [
+        442.0,
+        920.0,
+        529.0,
+        1017.0
+      ],
+      [
+        344.0,
+        970.0,
+        409.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "c5cd0ee0ea6bd18cb213c0acb8583f358bd237c9e4f1747f9ffe05b68e111255",
+      "thermal": "0ed8e7abdd9873974957da238f72e5da6b7977c1042b6319a8721592459a21aa",
+      "annotation": "a21fd37e3f9375ab415cbf5c23e2d5b4d0ae2c294ba854c95bca7f45b6f85469"
+    }
+  },
+  {
+    "id": "230371",
+    "split": "test",
+    "scene": "23",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\230371.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\230371.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\230371.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        657.0,
+        41.0,
+        791.0,
+        259.0
+      ],
+      [
+        923.0,
+        19.0,
+        1039.0,
+        198.0
+      ],
+      [
+        973.0,
+        314.0,
+        1096.0,
+        551.0
+      ],
+      [
+        1001.0,
+        161.0,
+        1083.0,
+        395.0
+      ],
+      [
+        1035.0,
+        194.0,
+        1160.0,
+        412.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "d1d7a813f6e2023a3aba184f97ce8f46355cf0628b5db2861a1dfcc71c6c10aa",
+      "thermal": "11052ba4226653075d164f14eb51b26d19baf1ae94baa6135bedf6ee0e1ce7cd",
+      "annotation": "fb1bf1efde6bd1ce181e495277cc9057ae6add1d32d5e43a649ef1b86bb996bf"
+    }
+  },
+  {
+    "id": "190238",
+    "split": "test",
+    "scene": "19",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\190238.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\190238.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\190238.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        51.0,
+        329.0,
+        157.0,
+        585.0
+      ],
+      [
+        139.0,
+        293.0,
+        244.0,
+        566.0
+      ],
+      [
+        358.0,
+        614.0,
+        468.0,
+        926.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "0436e354e4bacb1459ad58f9f667e0b8075da790e5b18ddfa4d63a45a61a1e28",
+      "thermal": "58f4c286545f1798da089fa9ddca869d2dd6dea3d836f45e52a77b75138187a2",
+      "annotation": "5426d52a4fa784fe26fa97146828780194137ec368e1c5415c6fe71755f6d4ea"
+    }
+  },
+  {
+    "id": "260531",
+    "split": "test",
+    "scene": "26",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\260531.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\260531.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\260531.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        890.0,
+        94.0,
+        1004.0,
+        319.0
+      ],
+      [
+        1241.0,
+        553.0,
+        1280.0,
+        804.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "5eec1e35eaeead9e0e63c7c9b207c68b6f333aad1daf046b0557a33f3f678578",
+      "thermal": "dac12de6d3f06b1f930b15bdc550b800a8d8b60fc464546b59e29012397afba9",
+      "annotation": "4c20006e8d2aa8308ef4eeb849b6fa9f14a2b0bf8419935152c3f39ee64e40a3"
+    }
+  },
+  {
+    "id": "240163",
+    "split": "test",
+    "scene": "24",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\240163.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\240163.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\240163.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1046.0,
+        426.0,
+        1116.0,
+        625.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "cb209568a3d78f58a924eeaa6527cb4c38f299deea7861d7446b2ada0142facf",
+      "thermal": "d20ad201348147270049f1327c222db5069262f6a4b7e02f3d769f2337fd20bc",
+      "annotation": "f1e9bf8489b0decc26b5f96fff95056469ab3feb19e3c9b6f3699eb643a448b2"
+    }
+  },
+  {
+    "id": "200020",
+    "split": "test",
+    "scene": "20",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\200020.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\200020.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\200020.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        493.0,
+        385.0,
+        645.0,
+        713.0
+      ],
+      [
+        883.0,
+        771.0,
+        1051.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "d9cd8ed1b855929aaa3735c1d80e8880e7d9979f31e98510c05e2c330f1fe6b0",
+      "thermal": "aee8294e1967db4e6c3e249b78801d976486672c613b64fc2f3715c3e714e423",
+      "annotation": "cae50ac38d619ae277a2ea6df2bf6e71a3b446dbb7907fb40fecfa29ce8ce1fa"
+    }
+  },
+  {
+    "id": "190058",
+    "split": "test",
+    "scene": "19",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\190058.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\190058.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\190058.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        861.0,
+        19.0,
+        983.0,
+        270.0
+      ],
+      [
+        1026.0,
+        339.0,
+        1141.0,
+        556.0
+      ],
+      [
+        300.0,
+        969.0,
+        421.0,
+        1020.0
+      ],
+      [
+        879.0,
+        955.0,
+        1030.0,
+        1024.0
+      ],
+      [
+        1240.0,
+        476.0,
+        1280.0,
+        700.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "58b31e48b9c54212384f51985379379e7f17db7a93efb794b9848d53a587c0af",
+      "thermal": "5d298d8f1e3f616adfc97cde93404cc79127ea250e8a276a323fda453a572758",
+      "annotation": "a0f688a62a3b9e6199db2e795f4851a9d2e74368dc3e1e86ea153f8eb2344dfd"
+    }
+  },
+  {
+    "id": "190008",
+    "split": "test",
+    "scene": "19",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\190008.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\190008.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\190008.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        810.0,
+        127.0,
+        928.0,
+        335.0
+      ],
+      [
+        973.0,
+        49.0,
+        1079.0,
+        222.0
+      ],
+      [
+        0,
+        432.0,
+        19.0,
+        681.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "c7a310ecafff9469b375af07861b1a5f06449b5595af3bd1370faca97a66088d",
+      "thermal": "ef61821468368033bb9984e8c4dd11645c59f26c9c2bae33965fa939c38158a7",
+      "annotation": "6c9d73bbeb9cefa6c5693511695e918d7eea59e2dad16964ad01bd320346d68e"
+    }
+  },
+  {
+    "id": "210121",
+    "split": "test",
+    "scene": "21",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\210121.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\210121.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\210121.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        796.0,
+        569.0,
+        990.0,
+        872.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "1d9b01ef36f6c91c975a84b84b6e54b23e1beb9b724005f352ea6a98979831c2",
+      "thermal": "a46f934469cb24857b7f2479fd428e2bd49cd43ac5333aad85687f9138bedf7d",
+      "annotation": "12d77835fcff30e6f2ab6476799eb637b7fd0ce11907420133b203a5a460c41d"
+    }
+  },
+  {
+    "id": "230049",
+    "split": "test",
+    "scene": "23",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\230049.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\230049.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\230049.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        914.0,
+        31.0,
+        1046.0,
+        295.0
+      ],
+      [
+        692.0,
+        965.0,
+        807.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "2297cf0b1f40f14142ec5012e7b3eebbf3307037704c2437febc22d44d8899fd",
+      "thermal": "54e48ec8b71a5844efc2290b07135cbfccc1497343e4f36566953c1b32680e45",
+      "annotation": "e84b0e51efb90fbf5431eaedaacf275990f633c5e966f56bd6dd960d9d077ece"
+    }
+  },
+  {
+    "id": "240026",
+    "split": "test",
+    "scene": "24",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\240026.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\240026.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\240026.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        627.0,
+        754.0,
+        714.0,
+        1020.0
+      ],
+      [
+        289.0,
+        705.0,
+        381.0,
+        946.0
+      ],
+      [
+        342.0,
+        621.0,
+        442.0,
+        849.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "435d49130372fdc0fde1a1731f2d9060ac6a1143ef6926b8ac7c27dd63a9b1a5",
+      "thermal": "08c318e3b8e15036b14183bfc02edb557e923c6e65b190205e44b1107e6a2980",
+      "annotation": "c514a176772ebe8077230e6561d77345c831fba89458b8801c8ff31d62f5a7f2"
+    }
+  },
+  {
+    "id": "190542",
+    "split": "test",
+    "scene": "19",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\190542.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\190542.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\190542.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        29.0,
+        215.0,
+        129.0,
+        469.0
+      ],
+      [
+        228.0,
+        889.0,
+        329.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "e269808c4c471abfbb5f244a4a6c0a103c15994dada3939233553390bed216e8",
+      "thermal": "fbcae51ae77d24f332d0c1b7a5041caa4d3bc35e7dee910dbbf6230bc2e2ed9a",
+      "annotation": "d8616478448fb175b67d848a50baa9f9aadc0f983b35befab095ae61c6b12978"
+    }
+  },
+  {
+    "id": "210094",
+    "split": "test",
+    "scene": "21",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\210094.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\210094.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\210094.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1065.0,
+        487.0,
+        1178.0,
+        843.0
+      ],
+      [
+        1162.0,
+        528.0,
+        1260.0,
+        848.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "f625574c9f27db24be1bb1cad00166d7701a84bd0a2ca556ea77d47de22a302f",
+      "thermal": "51abad7dacafa5a009e708b948993d664eb863b0776bcccfc270876edfd16190",
+      "annotation": "85d5c1428626c7f6ff09627752a0440d76baac6bfa2080a8ce842a938e42070d"
+    }
+  },
+  {
+    "id": "240365",
+    "split": "test",
+    "scene": "24",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\240365.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\240365.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\240365.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        337.0,
+        782.0,
+        420.0,
+        1017.0
+      ],
+      [
+        190.0,
+        654.0,
+        289.0,
+        902.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "00603159297360611c292646132050b120c96251281ab33b61bae00370b3cae4",
+      "thermal": "12d63f5d75428b2bfadbaa94ecf32b0ae8d985d77bdc160dd170bc8b6711884b",
+      "annotation": "218c1bd95f9145546e4b902f84eb9f8d4d5ded37bc3167b821c1ba8acdd4e40b"
+    }
+  },
+  {
+    "id": "200136",
+    "split": "test",
+    "scene": "20",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\200136.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\200136.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\200136.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        796.0,
+        805.0,
+        915.0,
+        1024.0
+      ],
+      [
+        396.0,
+        0,
+        538.0,
+        216.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "ee860a725e2c840eecfb8c74224992070fcb5e704364a621cab6ea161a685f37",
+      "thermal": "4c1bc1650829df64a6da9d25f480553c84b50294fb45620028fcc5de50345310",
+      "annotation": "13dc849f4e154413642c5859e5cbeb942531efeefa5dfebf557f983338eba934"
+    }
+  },
+  {
+    "id": "220174",
+    "split": "test",
+    "scene": "22",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\220174.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\220174.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\220174.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        146.0,
+        824.0,
+        205.0,
+        1013.0
+      ],
+      [
+        200.0,
+        865.0,
+        276.0,
+        1024.0
+      ],
+      [
+        361.0,
+        762.0,
+        424.0,
+        880.0
+      ],
+      [
+        412.0,
+        791.0,
+        491.0,
+        873.0
+      ],
+      [
+        689.0,
+        529.0,
+        802.0,
+        783.0
+      ],
+      [
+        783.0,
+        540.0,
+        862.0,
+        828.0
+      ],
+      [
+        1054.0,
+        542.0,
+        1188.0,
+        864.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "63ae3af192ecd40ba09396d3f4f2ced0783f44a8c2d07bc9509ed5595b1c3d75",
+      "thermal": "c07f62c818ba52d37912eacafce9fda64e2da088ec931a1b53b295ced209abee",
+      "annotation": "bc28e1cd72374c11f438bffa1f15a09c9501c92d8e4f052544cdc4843701a350"
+    }
+  },
+  {
+    "id": "230154",
+    "split": "test",
+    "scene": "23",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\230154.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\230154.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\230154.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1063.0,
+        405.0,
+        1218.0,
+        688.0
+      ],
+      [
+        821.0,
+        189.0,
+        956.0,
+        451.0
+      ],
+      [
+        1019.0,
+        118.0,
+        1136.0,
+        376.0
+      ],
+      [
+        1076.0,
+        32.0,
+        1234.0,
+        280.0
+      ],
+      [
+        740.0,
+        0,
+        900.0,
+        196.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "b7a82f067ba003ae3b45b643cc22d082d8d7d058cce941036cfbb6f79712acc0",
+      "thermal": "931b4df944b2be46499af0f9ea1f25722dcf1137e1dd352a01c53271cc7b370f",
+      "annotation": "d9770f97c15e143218a5b0f2248353b9e4f6bbc5cf0410a6169ec2e85d635895"
+    }
+  },
+  {
+    "id": "240414",
+    "split": "test",
+    "scene": "24",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\240414.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\240414.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\240414.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        585.0,
+        879.0,
+        663.0,
+        1024.0
+      ],
+      [
+        275.0,
+        778.0,
+        350.0,
+        994.0
+      ],
+      [
+        206.0,
+        774.0,
+        284.0,
+        1011.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "3c2fa3412173114b7f68432c9be826608d891061948edae1f42f2b9dffa1a9c1",
+      "thermal": "d681d057cc41d4e3da138454aecdb3f6e4a27f73844937710687ad0ac4fdbb25",
+      "annotation": "4e1f230165b519139ace3995553c71746102c4a7d17b9fed11164b17504a141f"
+    }
+  },
+  {
+    "id": "240195",
+    "split": "test",
+    "scene": "24",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\240195.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\240195.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\240195.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        864.0,
+        200.0,
+        962.0,
+        385.0
+      ],
+      [
+        556.0,
+        911.0,
+        661.0,
+        1024.0
+      ],
+      [
+        433.0,
+        938.0,
+        526.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "5ca47e81e5738a2e2d10eb74d80ba2ecafb912cd9ea07998f1f19c8eb7e9b1a6",
+      "thermal": "e551cfd45790e78edbe0f96e735e7b3be2b00c431005bd42fb10d6eb28dbc673",
+      "annotation": "5d0255693a1ad73bed22879a116a801424c3a437948e9f64820ca86ec2fd5e80"
+    }
+  },
+  {
+    "id": "230012",
+    "split": "test",
+    "scene": "23",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\230012.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\230012.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\230012.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        101.0,
+        761.0,
+        226.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "c48ea89fb47552d5ce6d916ab8ebb4f35e0eda77b26eff7a8ca4ff36a58c9169",
+      "thermal": "007c79d8bb1b37fd00a62b24a6644478e9fe3993dcbde13032da5b3620f915d2",
+      "annotation": "dbb83cffa9ea3a7d51f833a522d5119f262aecb4b7dc4b253f75c5bc5fb178ca"
+    }
+  },
+  {
+    "id": "190381",
+    "split": "test",
+    "scene": "19",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\190381.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\190381.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\190381.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        919.0,
+        288.0,
+        1031.0,
+        468.0
+      ],
+      [
+        1198.0,
+        307.0,
+        1280.0,
+        536.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "03bd24770a5d4f39135b839cc62e3be342ac2e5515556aedea34f9a91db855d5",
+      "thermal": "cad7e1d9ed72c427a0dd7d275093f8c779c44ced7d16f16d8f5fd5d5a4b565e9",
+      "annotation": "3160b02467941edd5f6915ff5ab1db5ce91691e048ad1bed16d5480a9e911cf3"
+    }
+  },
+  {
+    "id": "230027",
+    "split": "test",
+    "scene": "23",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\230027.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\230027.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\230027.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1045.0,
+        745.0,
+        1147.0,
+        1024.0
+      ],
+      [
+        225.0,
+        752.0,
+        370.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "1205ba57336e4ab6814a4f3a7f4b9eb715c34cdfd478c469e57409865cebf459",
+      "thermal": "0b5a6bb77994e74d5d1fafd062c25bd0f33b0dc35267b2843ca05f6f37e1521a",
+      "annotation": "2aeea1ff280fb16ef380d659e0b33ce7bb12459d7208b0fec1617561d4c3ffba"
+    }
+  },
+  {
+    "id": "260254",
+    "split": "test",
+    "scene": "26",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\260254.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\260254.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\260254.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        913.0,
+        301.0,
+        1036.0,
+        527.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "fb184164a5bc1ca13776097db270f88e820afaef22e2610b7ad63318b6eb3719",
+      "thermal": "1d7bae3208f3f44e48154a6a581441bcce15b59ff8b7361d73229893bc24e7c0",
+      "annotation": "9d391aacae17396774bda7daf36a09ea53d8e80576d5c6324fe44c0f676ed81d"
+    }
+  },
+  {
+    "id": "190688",
+    "split": "test",
+    "scene": "19",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\190688.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\190688.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\190688.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1070.0,
+        106.0,
+        1190.0,
+        361.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "84cd5abbb02e2d1f152bcf118cbc85e2cc8f6411a135e22295e692acd9c5c92a",
+      "thermal": "b9f3565dc4c5e65e38d6e22d7e192876223d089139b248af8d074b486483ac87",
+      "annotation": "6bcad97486c65df8e68d3c6f8511a71b628b9296bc862ef7c35756c3e73af0dd"
+    }
+  },
+  {
+    "id": "220156",
+    "split": "test",
+    "scene": "22",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\220156.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\220156.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\220156.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        525.0,
+        703.0,
+        680.0,
+        956.0
+      ],
+      [
+        759.0,
+        885.0,
+        831.0,
+        1024.0
+      ],
+      [
+        817.0,
+        932.0,
+        914.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "1569162137f122e81ca486f2dc05084f0acc70fcfe65e020e2e922910c0f5bff",
+      "thermal": "9674ac63992ab4bd8b63bdcc082b52cab5d83fde8e5eed5dd94617369f680d31",
+      "annotation": "baf01aa8cae422dea86c629c33e8bcdd56dcdcf8bba80685dd0b50776b8eaa83"
+    }
+  },
+  {
+    "id": "220015",
+    "split": "test",
+    "scene": "22",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\220015.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\220015.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\220015.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        679.0,
+        830.0,
+        836.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "ef8a1f40a4fc9e76d98294d84a0a224acbcd055536d7a75a7704985fefceafba",
+      "thermal": "bd24bc65e869790c53b29ea21bd42e49210df81b1f467c0f8a3cb1a82110eecb",
+      "annotation": "bc433b1d867d353de1e92cd6892803d5f5ff348e29537adca523286b6f534a72"
+    }
+  },
+  {
+    "id": "210284",
+    "split": "test",
+    "scene": "21",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\210284.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\210284.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\210284.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        243.0,
+        260.0,
+        408.0,
+        566.0
+      ],
+      [
+        251.0,
+        577.0,
+        436.0,
+        916.0
+      ],
+      [
+        766.0,
+        892.0,
+        849.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "708cb7cea9aec3458127675a464fc46f5624cbb4f3b60c71a87f9ad85a2404e1",
+      "thermal": "0d229d4127f63f9a97ddf009bc25cdb67af1c415caf86623f4c7d4a24d581bfd",
+      "annotation": "a072add058a707ee8c5b97afce7e5135a78e632bde3ed6bb1e6e5b8e2310abf6"
+    }
+  },
+  {
+    "id": "260346",
+    "split": "test",
+    "scene": "26",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\260346.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\260346.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\260346.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        1191.0,
+        486.0,
+        1280.0,
+        728.0
+      ],
+      [
+        1066.0,
+        261.0,
+        1178.0,
+        418.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "0ff5ac60b78d85aff3b699e192bf9c81ce66e64678e3dd29c548438fffdea551",
+      "thermal": "ba4edb4342cb5a5e92a9b335e4a3b95b335f205fbf6acc4962d1632fda624d04",
+      "annotation": "7064c70c6bb1c26d756cfc1c85c4e604265965559662d8b98812dedaca2643c4"
+    }
+  },
+  {
+    "id": "240264",
+    "split": "test",
+    "scene": "24",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\240264.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\240264.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\240264.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        357.0,
+        892.0,
+        451.0,
+        1024.0
+      ],
+      [
+        239.0,
+        912.0,
+        349.0,
+        1024.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "808be2e666e3da3a10b526ab9a8193d9bb6ccb1d94d3c5e64769f434d2f12236",
+      "thermal": "5d1667cff1d521a0717d95dbd179b881638fbc1760594dea4494c049aacb56a1",
+      "annotation": "0a618a2a73358b112d86c6ec68f28e097035f5df097996865aa5c56560398730"
+    }
+  },
+  {
+    "id": "200142",
+    "split": "test",
+    "scene": "20",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\200142.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\200142.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\200142.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        338.0,
+        696.0,
+        492.0,
+        1023.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "427e33cc836fd86907e39af6b399771e54bea098dd9ec4ac369eb57e2967a575",
+      "thermal": "4cbe96d75206630126c6f32fec6ed5dbd6d14d2a6124509d867491c4884f01c6",
+      "annotation": "b1529b5d6f3deecd9dcbda22bac7e331e555cff67a5f35596451398e062ad531"
+    }
+  },
+  {
+    "id": "210328",
+    "split": "test",
+    "scene": "21",
+    "visible": "data\\llvip_subset\\LLVIP\\visible\\test\\210328.jpg",
+    "thermal": "data\\llvip_subset\\LLVIP\\infrared\\test\\210328.jpg",
+    "annotation": "data\\llvip_subset\\LLVIP\\Annotations\\210328.xml",
+    "width": 1280,
+    "height": 1024,
+    "boxes": [
+      [
+        767.0,
+        582.0,
+        930.0,
+        901.0
+      ],
+      [
+        312.0,
+        720.0,
+        473.0,
+        994.0
+      ]
+    ],
+    "class": "person",
+    "sha256": {
+      "visible": "feb5edbdd834cf6bf751ae930c4e0e7855ff970fac95c2c8183c6a22000fed93",
+      "thermal": "e89d0e1a32099b4021f364ce326c1505837b716836516d2840b4827018999d99",
+      "annotation": "ce875fc408076c042a7e538bea1f610291a5461235e9041ff15bceee73cb8bb1"
+    }
+  }
+]

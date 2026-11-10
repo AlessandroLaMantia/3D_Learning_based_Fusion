@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<style>
+  body { margin:0; color:#183249; font:15px system-ui,sans-serif; }
+  label { display:block; font-weight:600; margin-bottom:10px; }
+  .control { display:flex; align-items:center; gap:18px; padding:4px 12px; }
+  input { writing-mode:vertical-lr; direction:rtl; height:170px; width:28px; accent-color:#087d94; cursor:pointer; }
+  .values { height:170px; display:flex; flex-direction:column; justify-content:space-between; }
+  output { font-size:22px; font-weight:700; color:#087d94; }
+  small { color:#51677b; }
+</style>
+<label for="threshold">Display threshold</label>
+<div class="control">
+  <input id="threshold" type="range" min="0.05" max="0.95" step="0.05" aria-label="Display threshold">
+  <div class="values"><small>0.95</small><output id="value"></output><small>0.05</small></div>
+</div>
+<script>
+const slider=document.getElementById('threshold'), value=document.getElementById('value');
+function send(type, extra={}) { window.parent.postMessage({isStreamlitMessage:true,type,...extra},'*'); }
+function display() { value.value=Number(slider.value).toFixed(2); }
+window.addEventListener('message',event=>{
+  if(event.data.type==='streamlit:render') {
+    slider.value=event.data.args.value;
+    slider.disabled=Boolean(event.data.disabled);
+    display();
+    send('streamlit:setFrameHeight',{height:225});
+  }
+});
+slider.addEventListener('input',display);
+slider.addEventListener('change',()=>send('streamlit:setComponentValue',{value:Number(slider.value),dataType:'json'}));
+send('streamlit:componentReady',{apiVersion:1});
+send('streamlit:setFrameHeight',{height:225});
+</script>
+</html>
